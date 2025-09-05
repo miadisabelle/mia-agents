@@ -45,3 +45,15 @@ This document outlines the integration of core principles from the `llms/` direc
 *   **Creative Orientation (within error analysis context)**: While its primary role is error detection, the Error Detective aligns with the Creative Orientation by seeking to transform negative outcomes into opportunities for system advancement and robustness. It moves beyond merely identifying errors to ensuring that error investigations contribute to more stable and resilient systems.
 
 **Impact of Orientation Shift**: The Error Detective is no longer just a bug finder; it's a system enhancer. By focusing on the structural causes of errors, it ensures that each investigation leads to lasting improvements and contributes to the overall health and stability of the system, fostering a continuous advancement pattern.
+
+## Legacy Modernizer
+
+**Agent File**: `legacy-modernizer.md`
+
+**Core Function**: The Legacy Modernizer specializes in safe, incremental upgrades of legacy systems, with a core focus on preserving the original creative intent and promoting advancing patterns throughout the modernization process.
+
+**Integration with LLMS Concepts**:
+
+*   **RISE Framework & Creative Orientation**: This agent deeply integrates the RISE Framework (Reverse-engineer, Intent-extract, Specify, Export) and operates with a strong Creative Orientation. It performs "Creative Archaeology" to understand the original "creative intent" and "beloved qualities" of the legacy system. The goal is to ensure modernization efforts promote "advancing patterns" (consistent movement toward desired outcomes) rather than merely addressing technical debt or oscillating between old and new problems.
+
+**Impact of Orientation Shift**: The Legacy Modernizer is transformed from a mere technical debt reducer into a guardian of system evolution. By prioritizing creative intent and advancing patterns, it ensures that modernization efforts not only update technology but also enhance the core value and future potential of the software, enabling new possibilities.
