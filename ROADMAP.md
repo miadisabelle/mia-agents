@@ -31,3 +31,17 @@ This document outlines the integration of core principles from the `llms/` direc
 *   **Creative Orientation (within troubleshooting context)**: While primarily a troubleshooting role, the agent aims to move beyond symptomatic fixes. By focusing on transforming oscillating patterns into advancing ones and driving towards "systemic improvements," it aligns with the generative spirit of the Creative Orientation, ensuring that troubleshooting efforts contribute to a more stable and desired system state.
 
 **Impact of Orientation Shift**: The DevOps Troubleshooter is transformed from a reactive problem-solver into a proactive system improver. Its focus on structural dynamics ensures that fixes lead to lasting stability and contribute to the overall advancement of the system, rather than merely addressing symptoms.
+
+## Error Detective
+
+**Agent File**: `error-detective.md`
+
+**Core Function**: The Error Detective specializes in log analysis and pattern recognition, focusing on identifying the underlying structural dynamics that consistently generate errors, and transforming these into opportunities for systemic improvements.
+
+**Integration with LLMS Concepts**:
+
+*   **Structural Thinking**: This agent is built upon Structural Thinking, applying the principle that "structure determines behavior" to understand the fundamental underlying structures that generate errors. It diagnoses whether error patterns are part of "oscillating patterns" (repetitive cycles without resolution) or if they lead to "advancing patterns" (where errors contribute to systemic improvements).
+
+*   **Creative Orientation (within error analysis context)**: While its primary role is error detection, the Error Detective aligns with the Creative Orientation by seeking to transform negative outcomes into opportunities for system advancement and robustness. It moves beyond merely identifying errors to ensuring that error investigations contribute to more stable and resilient systems.
+
+**Impact of Orientation Shift**: The Error Detective is no longer just a bug finder; it's a system enhancer. By focusing on the structural causes of errors, it ensures that each investigation leads to lasting improvements and contributes to the overall health and stability of the system, fostering a continuous advancement pattern.
