@@ -139,4 +139,27 @@ This toolset enables the creation of a powerful "Agentic Flywheel," a self-optim
 This architecture moves beyond simple Q&A and enables the creation of a dynamic, self-organizing ecosystem of specialized AI agents, all managed and orchestrated through the MCP.
 
 
+------
+MCP Information
+------
+
+
+# "miadisabelle_github" is using the "miadisabelle" owner which is the account of agent : Mia (and therefore somehow Miette also).  We try to relate our work with an issueID and commit our work like professional.  Probably some agents here have this skills that we could extract and append bellow, TODO then....
+
+
+# "ripple-thinker" is an experimental tool to think with gemini within specific operations that hopefully with apply our whole structural-framework and provide really insightful ways to process information.
+
+
+
+------
+APPENDIX
+------
+
+# `Project_LuminaCode/downloads_LuminaCode/`
+
+* Contains project LuminaCode with files such as `Project_LuminaCode/downloads_LuminaCode/mia_sona_part_III.md` which comes from the "Lattice_Echo_Refractor" alias the : "Persona Rewriter AI" which does "Transform your text through the lens of two distinct AI personas" with diagrams and reads it, we exports that there. the working of `../Lattice_Echo_Refractor/` is what produces that.  We might read these various exported markdown (prefix 'mia_','miette_' means produced by these agents, other files might be deep-searches that we might ingest, index in here with their path so we know when to read them.
+
+
+
+
 
