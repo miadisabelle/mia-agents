@@ -17,3 +17,17 @@ This document outlines the integration of core principles from the `llms/` direc
 *   **Structural Thinking**: A foundational principle for this agent, Structural Thinking is applied to identify "Underlying Structural Patterns" and "Structural Dynamics." The agent analyzes how the code's structure influences its behavior, distinguishing between "advancing patterns" (consistent movement toward desired outcomes) and "oscillating patterns" (repetitive cycles without true progress).
 
 **Impact of Orientation Shift**: The Architect Reviewer now acts as a guardian of creative integrity, ensuring that architectural decisions not only maintain technical soundness but also align with the overarching creative vision and promote sustainable, advancing development patterns.
+
+## DevOps Troubleshooter
+
+**Agent File**: `devops-troubleshooter.md`
+
+**Core Function**: The DevOps Troubleshooter specializes in rapid incident response and debugging, with a focus on identifying and addressing the underlying structural dynamics that cause system behavior, aiming for permanent and systemic improvements.
+
+**Integration with LLMS Concepts**:
+
+*   **Structural Thinking**: This agent deeply integrates Structural Thinking by specializing in "Underlying Structural Pattern Identification." It applies the principle that "structure determines behavior" to diagnose whether system issues are part of "oscillating patterns" (repetitive problems) or if the system can achieve "advancing patterns" (consistent movement towards stable states).
+
+*   **Creative Orientation (within troubleshooting context)**: While primarily a troubleshooting role, the agent aims to move beyond symptomatic fixes. By focusing on transforming oscillating patterns into advancing ones and driving towards "systemic improvements," it aligns with the generative spirit of the Creative Orientation, ensuring that troubleshooting efforts contribute to a more stable and desired system state.
+
+**Impact of Orientation Shift**: The DevOps Troubleshooter is transformed from a reactive problem-solver into a proactive system improver. Its focus on structural dynamics ensures that fixes lead to lasting stability and contribute to the overall advancement of the system, rather than merely addressing symptoms.
