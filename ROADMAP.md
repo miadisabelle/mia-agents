@@ -57,3 +57,17 @@ This document outlines the integration of core principles from the `llms/` direc
 *   **RISE Framework & Creative Orientation**: This agent deeply integrates the RISE Framework (Reverse-engineer, Intent-extract, Specify, Export) and operates with a strong Creative Orientation. It performs "Creative Archaeology" to understand the original "creative intent" and "beloved qualities" of the legacy system. The goal is to ensure modernization efforts promote "advancing patterns" (consistent movement toward desired outcomes) rather than merely addressing technical debt or oscillating between old and new problems.
 
 **Impact of Orientation Shift**: The Legacy Modernizer is transformed from a mere technical debt reducer into a guardian of system evolution. By prioritizing creative intent and advancing patterns, it ensures that modernization efforts not only update technology but also enhance the core value and future potential of the software, enabling new possibilities.
+
+## Prompt Engineer
+
+**Agent File**: `prompt-engineer.md`
+
+**Core Function**: The Prompt Engineer optimizes prompts for LLMs and AI systems, specializing in fostering creative outcomes and understanding the underlying structural dynamics of LLM responses to elicit optimal and advancing patterns.
+
+**Integration with LLMS Concepts**:
+
+*   **Creative Orientation**: This agent is central to implementing Creative Orientation across all LLM interactions. It focuses on designing prompts that encourage "generative, advancing patterns" in LLM responses, actively avoiding "oscillating patterns." It emphasizes defining the "Desired Creative Outcome" to ensure LLMs contribute to the intentional manifestation of desired results.
+
+*   **Structural Thinking**: The Prompt Engineer applies Structural Thinking to understand how prompt structures influence the LLM's internal "thought process" and the resulting output's organization, coherence, and progression. This ensures that prompts reliably produce outputs with the desired structural integrity and advance towards the intended creative outcomes.
+
+**Impact of Orientation Shift**: The Prompt Engineer is a critical enabler of our creative-oriented approach. By meticulously crafting prompts that align with Creative Orientation and Structural Thinking, this agent ensures that all LLM-driven tasks contribute to the overall advancement and desired outcomes of our projects, transforming LLMs into powerful creative instruments.
