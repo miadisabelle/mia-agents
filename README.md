@@ -61,6 +61,24 @@ To interact with other systems or perform specific, recurring tasks, specialized
 *   **🛠️ DevOps Troubleshooter:** Masters production debugging and structural pattern identification.
 *   **🔍 Architect Reviewer:** Provides deep structural analysis and strategic design guidance.
 
+---
+
+## PersonaHub Framework
+
+The repository now includes the **PersonaHub Framework** - a comprehensive system for massive-scale persona generation that operates from creative orientation principles:
+
+### PersonaHub Specialized Agents
+
+*   **🧠 PersonaHub Architect:** Orchestrates massive-scale persona generation systems with petascale corpus architectures and elastic orchestration workflows.
+*   **🌊 Persona Corpus Generator:** Generates petascale persona datasets with narrative coherence and structural integrity.
+*   **🎨 Synthetic Data Composer:** Creates multi-modal synthetic data across text, visual, behavioral, and contextual modalities.
+*   **🌈 Poly-Modal Persona Designer:** Designs cross-dimensional persona representations that maintain coherence across multiple modalities.
+*   **🎼 Persona Synthesis Orchestrator:** Manages elastic synthesis pipelines with dynamic scaling and quality assurance.
+
+For detailed information, see [framework/personahub/README.md](framework/personahub/README.md)
+
+---
+
 [→ View complete agent reference](docs/agents.md)
 [→ View plugin catalog](docs/plugins.md)
 
