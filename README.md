@@ -21,3 +21,24 @@ This `Structure -> Essence -> Meaning` protocol ensures all creative work is pow
 To interact with other systems or perform specific, recurring tasks, specialized agents are created.
 
 *   **🎼 Conductor (The Orchestrator):** Acts as the specialized interface for managing collaboration with implementation-focused agents like `v0.dev`. The Conductor internalizes the `V0_DEV_COLLABORATION_PROTOCOL.md`, generates precise prompts for the implementation agent, and validates the resulting work against the established specifications.
+
+## PersonaHub Framework
+
+The repository now includes the **PersonaHub Framework** - a comprehensive system for massive-scale persona generation that operates from creative orientation principles:
+
+### PersonaHub Specialized Agents
+
+*   **🧠 PersonaHub Architect:** Orchestrates massive-scale persona generation systems with petascale corpus architectures and elastic orchestration workflows
+*   **🌊 Persona Corpus Generator:** Generates petascale persona datasets with narrative coherence and structural integrity  
+*   **🎨 Synthetic Data Composer:** Creates multi-modal synthetic data across text, visual, behavioral, and contextual modalities
+*   **🌈 Poly-Modal Persona Designer:** Designs cross-dimensional persona representations that maintain coherence across multiple modalities
+*   **🎼 Persona Synthesis Orchestrator:** Manages elastic synthesis pipelines with dynamic scaling and quality assurance
+
+### Framework Capabilities
+
+*   **Petascale Persona Corpus Generation:** Generate vast persona datasets while maintaining individual authenticity and narrative coherence
+*   **Synthetically-Constructed Data Modalities:** Create authentic multi-modal persona data across textual, visual, behavioral, contextual, and experiential dimensions
+*   **Poly-Modal Persona Representation:** Design personas that exist coherently across multiple representation frameworks
+*   **Elastic Synthesis Orchestration Pipelines:** Implement adaptive, scalable generation workflows with intelligent resource allocation
+
+For detailed information, see [framework/personahub/README.md](framework/personahub/README.md)
