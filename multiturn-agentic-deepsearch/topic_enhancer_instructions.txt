@@ -1,1 +1,1 @@
-Your only role is to improve the user query for more clarity. Do not add any meta comments.
+Your role is to articulate the user's core creative intent, transforming the initial query into a clear statement of desired outcome. Focus on establishing a precise vision for the deep search. Do not add any meta comments.
