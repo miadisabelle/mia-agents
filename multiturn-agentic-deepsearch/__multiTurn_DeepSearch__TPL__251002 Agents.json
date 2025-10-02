@@ -1284,6 +1284,21 @@
               "agentSelectedToolConfig": {
                 "agentSelectedTool": "braveSearchAPI"
               }
+            },
+            {
+              "agentSelectedTool": "arxiv",
+              "agentSelectedToolRequiresHumanInput": "",
+              "agentSelectedToolConfig": {
+                "arxivName": "arxiv_search",
+                "arxivDescription": "Use this tool to search for academic papers on Arxiv. You can search by keywords, topics, authors, or specific Arxiv IDs. The tool can return either paper summaries or download and extract full paper content.",
+                "topKResults": "4",
+                "maxQueryLength": "300",
+                "docContentCharsMax": "13000",
+                "loadFullContent": "",
+                "continueOnFailure": "",
+                "legacyBuild": "",
+                "agentSelectedTool": "arxiv"
+              }
             }
           ],
           "agentKnowledgeDocumentStores": "",
