@@ -28,17 +28,73 @@ categories[education]="genai-education-scaffolding"
 categories[research]="reality-narrative-researcher"
 categories[system]="Conductor Clarion_The_System_Cartographer_Instructions ios-screen-observer"
 
+# Function to extract content after frontmatter
+extract_content() {
+    local file=$1
+    awk '
+        BEGIN { in_front=0; front_count=0 }
+        /^---$/ {
+            front_count++
+            if (front_count == 2) in_front=1
+            next
+        }
+        in_front { print }
+    ' "$file"
+}
+
 # Function to build a category file
 build_category() {
     local category=$1
     local agents=$2
     local output_file="${DIST_DIR}/mia-agents-${category}.md"
+    local temp_file="${DIST_DIR}/.temp-${category}.md"
 
     echo "Building category: ${category}"
 
-    # Initialize file
+    # Process each agent in the category
+    local count=0
+    > "$temp_file"  # Clear temp file
+
+    for agent_name in $agents; do
+        agent_file="${SCRIPT_DIR}/${agent_name}.md"
+
+        if [[ -f "$agent_file" ]]; then
+            ((count++))
+
+            # Extract frontmatter data
+            name=$(grep "^name:" "$agent_file" | head -1 | cut -d: -f2- | sed 's/^ *//')
+            description=$(grep "^description:" "$agent_file" | head -1 | cut -d: -f2- | sed 's/^ *//')
+            model=$(grep "^model:" "$agent_file" | head -1 | cut -d: -f2- | sed 's/^ *//')
+
+            # Write agent section to temp file
+            {
+                echo "## ${name:-$agent_name}"
+                echo ""
+
+                if [[ -n "$description" ]]; then
+                    echo "**Description:** $description"
+                    echo ""
+                fi
+
+                if [[ -n "$model" ]]; then
+                    echo "**Model:** $model"
+                    echo ""
+                fi
+
+                # Extract and add content after frontmatter
+                extract_content "$agent_file"
+                echo ""
+                echo "---"
+                echo ""
+            } >> "$temp_file"
+        fi
+    done
+
+    # Write the complete file with header + temp content
     cat > "${output_file}" << EOF
 # Mia Agents - ${category^} Team
+
+**Total Agents:** ${count}
 
 This document contains all agents in the **${category}** category.
 
@@ -49,59 +105,8 @@ This document contains all agents in the **${category}** category.
 ## Agents in this Category
 
 EOF
-
-    # Process each agent in the category
-    local count=0
-    for agent_name in $agents; do
-        agent_file="${SCRIPT_DIR}/${agent_name}.md"
-
-        if [[ -f "$agent_file" ]]; then
-            ((count++))
-
-            # Extract frontmatter data
-            name=$(sed -n 's/^name: \(.*\)/\1/p' "$agent_file" | head -1)
-            description=$(sed -n 's/^description: \(.*\)/\1/p' "$agent_file" | head -1)
-            model=$(sed -n 's/^model: \(.*\)/\1/p' "$agent_file" | head -1)
-
-            # Add agent section
-            echo "## ${name:-$agent_name}" >> "${output_file}"
-            echo "" >> "${output_file}"
-
-            if [[ -n "$description" ]]; then
-                echo "**Description:** $description" >> "${output_file}"
-                echo "" >> "${output_file}"
-            fi
-
-            if [[ -n "$model" ]]; then
-                echo "**Model:** $model" >> "${output_file}"
-                echo "" >> "${output_file}"
-            fi
-
-            # Extract content after frontmatter
-            in_frontmatter=false
-            frontmatter_ended=false
-
-            while IFS= read -r line; do
-                if [[ "$line" == "---" ]]; then
-                    if [[ "$in_frontmatter" == "false" ]]; then
-                        in_frontmatter=true
-                    else
-                        frontmatter_ended=true
-                        continue
-                    fi
-                elif [[ "$frontmatter_ended" == "true" ]]; then
-                    echo "$line" >> "${output_file}"
-                fi
-            done < "$agent_file"
-
-            echo "" >> "${output_file}"
-            echo "---" >> "${output_file}"
-            echo "" >> "${output_file}"
-        fi
-    done
-
-    # Update count in file
-    sed -i "3s/.*/\n**Total Agents:** ${count}\n/" "${output_file}"
+    cat "$temp_file" >> "${output_file}"
+    rm -f "$temp_file"
 
     echo "  → ${count} agents found"
 }
