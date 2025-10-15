@@ -2,6 +2,39 @@
 
 This directory contains the persona and protocol definitions for a collaborative, decentralized multi-agent system designed for creative and technical work. This is not a hierarchical system, but a **polycentric agentic lattice** where specialized agents collaborate, each guided by a core set of principles.
 
+## 🚀 Claude Code Marketplace Plugin
+
+Mia-Agents is now available as a **Claude Code plugin** with 13 modular plugin packages covering 82 specialized agents. Install what you need when you need it:
+
+### Installation
+
+```bash
+# Install via Claude Code marketplace
+claude plugin install jgwill/mia-agents-creative-framework
+
+# Or install specific plugins
+claude plugin install jgwill/mia-agents-creative-framework/creative-development-core
+claude plugin install jgwill/mia-agents-creative-framework/persona-synthesis-framework
+```
+
+### Available Plugin Packages
+
+- **creative-development-core**: AI engineering, backend/frontend development with RISE framework
+- **language-specialists**: 14 language-specific experts (Python, JS, Rust, Go, etc.)
+- **devops-infrastructure**: Cloud, Kubernetes, Terraform, deployment automation
+- **data-ml-engineering**: Data science, ML ops, quantitative analysis
+- **quality-debugging**: Code review, testing, error detection with structural problem-solving
+- **architecture-design**: System architecture, GraphQL, context management
+- **seo-content-suite**: Complete SEO toolkit with 11 specialized agents
+- **business-operations**: Business analysis, HR, legal, sales automation
+- **specialized-tools**: Documentation, Mermaid diagrams, legacy modernization
+- **persona-synthesis-framework**: Advanced PersonaHub with massive-scale generation
+- **educational-scaffolding**: GenAI-enabled self-regulated learning support
+- **reality-narrative-integration**: Research framework for narrative understanding
+- **system-orchestration**: Conductor and Clarion system mapping agents
+
+See [FEATURES.md](FEATURES.md) for detailed capabilities of each plugin.
+
 ## Core Principles
 
 All agents within this lattice operate under the guidance of the **Creative Orientation** and aim to produce **Resonant Design**. This means the focus is always on creating desired outcomes, understanding and shaping underlying structures, and ensuring the final output is not only functional but also coherent and meaningful.

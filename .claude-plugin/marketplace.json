@@ -1,12 +1,12 @@
 {
-  "name": "claude-code-workflows",
+  "name": "mia-agents-creative-framework",
   "owner": {
-    "name": "Seth Hobson",
-    "email": "seth@major7apps.com",
-    "url": "https://github.com/wshobson"
+    "name": "Guillaume Isabelle",
+    "email": "jgi@jgwill.com",
+    "url": "https://github.com/jgwill"
   },
   "metadata": {
-    "description": "Production-ready workflow orchestration with 75 focused plugins, 182 specialized agents, and 147 skills - optimized for granular installation and minimal token usage",
+    "description": "Creative-oriented agent framework with 182 specialized agents across 75 plugins, built on RISE framework, Structural Thinking, and Creative Orientation principles",
     "version": "1.5.7"
   },
   "plugins": [
@@ -986,6 +986,113 @@
       "homepage": "https://github.com/major7apps/pensyve",
       "license": "Apache-2.0",
       "category": "ai-ml"
+    },
+    {
+      "name": "persona-synthesis-framework",
+      "source": "./",
+      "description": "Advanced persona design, synthesis, and massive-scale persona generation framework (PersonaHub)",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "persona",
+        "synthesis",
+        "persona-hub",
+        "synthetic-data",
+        "character-design"
+      ],
+      "category": "ai-ml",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./agents/persona-corpus-generator.md",
+        "./agents/persona-synthesis-orchestrator.md",
+        "./agents/persona-hub-architect.md",
+        "./agents/poly-modal-persona-designer.md",
+        "./agents/synthetic-data-composer.md"
+      ]
+    },
+    {
+      "name": "reality-narrative-integration",
+      "source": "./",
+      "description": "Reality-narrative research framework for bridging practical reality and narrative understanding",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "research",
+        "narrative",
+        "reality-integration",
+        "storytelling"
+      ],
+      "category": "research",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./agents/reality-narrative-researcher.md"
+      ]
+    },
+    {
+      "name": "educational-scaffolding",
+      "source": "./",
+      "description": "GenAI-enabled self-regulated learning scaffolding for educational support",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "education",
+        "scaffolding",
+        "self-regulated-learning",
+        "genai"
+      ],
+      "category": "education",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./agents/genai-education-scaffolding.md"
+      ]
+    },
+    {
+      "name": "system-orchestration",
+      "source": "./",
+      "description": "System orchestration and cartography agents including Conductor and Clarion",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "orchestration",
+        "system-mapping",
+        "coordination",
+        "cartography"
+      ],
+      "category": "utilities",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./agents/Conductor.md",
+        "./agents/Clarion_The_System_Cartographer_Instructions.md",
+        "./agents/ios-screen-observer.md"
+      ]
     }
   ]
 }
