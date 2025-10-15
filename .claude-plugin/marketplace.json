@@ -1,0 +1,415 @@
+{
+  "name": "mia-agents-creative-framework",
+  "owner": {
+    "name": "Guillaume Isabelle",
+    "email": "jgi@jgwill.com",
+    "url": "https://github.com/jgwill"
+  },
+  "metadata": {
+    "description": "Creative-oriented agent framework with 82 specialized agents built on RISE framework, Structural Thinking, and Creative Orientation principles",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "creative-development-core",
+      "source": "./",
+      "description": "Core creative development agents with principled enhancement and structural thinking integration",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "creative-orientation",
+        "rise-framework",
+        "structural-thinking",
+        "development",
+        "ai-agents"
+      ],
+      "category": "development",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./ai-engineer.md",
+        "./backend-architect.md",
+        "./frontend-developer.md",
+        "./mobile-developer.md",
+        "./deployment-engineer.md"
+      ]
+    },
+    {
+      "name": "language-specialists",
+      "source": "./",
+      "description": "Language-specific programming experts covering Python, JavaScript, TypeScript, and systems languages",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "python",
+        "javascript",
+        "typescript",
+        "rust",
+        "golang",
+        "languages"
+      ],
+      "category": "languages",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./python-pro.md",
+        "./javascript-pro.md",
+        "./typescript-pro.md",
+        "./java-pro.md",
+        "./golang-pro.md",
+        "./rust-pro.md",
+        "./ruby-pro.md",
+        "./php-pro.md",
+        "./cpp-pro.md",
+        "./csharp-pro.md",
+        "./c-pro.md",
+        "./scala-pro.md",
+        "./elixir-pro.md",
+        "./sql-pro.md"
+      ]
+    },
+    {
+      "name": "devops-infrastructure",
+      "source": "./",
+      "description": "DevOps and infrastructure specialists with creative problem-solving orientation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "devops",
+        "cloud",
+        "terraform",
+        "kubernetes",
+        "infrastructure"
+      ],
+      "category": "infrastructure",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./deployment-engineer.md",
+        "./devops-troubleshooter.md",
+        "./cloud-architect.md",
+        "./terraform-specialist.md",
+        "./network-engineer.md",
+        "./incident-responder.md"
+      ]
+    },
+    {
+      "name": "data-ml-engineering",
+      "source": "./",
+      "description": "Data engineering, ML operations, and quantitative analysis with structural orientation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "data-engineering",
+        "machine-learning",
+        "mlops",
+        "data-science",
+        "quant"
+      ],
+      "category": "ai-ml",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./data-engineer.md",
+        "./data-scientist.md",
+        "./database-admin.md",
+        "./database-optimizer.md",
+        "./ml-engineer.md",
+        "./mlops-engineer.md",
+        "./quant-analyst.md"
+      ]
+    },
+    {
+      "name": "quality-debugging",
+      "source": "./",
+      "description": "Code review, testing, debugging, and error detection agents with structural problem-solving",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "quality",
+        "testing",
+        "debugging",
+        "code-review",
+        "error-detection"
+      ],
+      "category": "quality",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./code-reviewer.md",
+        "./test-automator.md",
+        "./debugger.md",
+        "./error-detective.md",
+        "./performance-engineer.md",
+        "./security-auditor.md"
+      ]
+    },
+    {
+      "name": "architecture-design",
+      "source": "./",
+      "description": "System architecture, context management, and design optimization agents",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "architecture",
+        "design",
+        "graphql",
+        "context-management"
+      ],
+      "category": "development",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./architect-review.md",
+        "./docs-architect.md",
+        "./graphql-architect.md",
+        "./dx-optimizer.md",
+        "./context-manager.md"
+      ]
+    },
+    {
+      "name": "seo-content-suite",
+      "source": "./",
+      "description": "Complete SEO and content strategy toolkit with 11 specialized agents",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "seo",
+        "content-strategy",
+        "keywords",
+        "meta-optimization",
+        "search"
+      ],
+      "category": "marketing",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./seo-keyword-strategist.md",
+        "./seo-content-planner.md",
+        "./seo-content-writer.md",
+        "./seo-content-auditor.md",
+        "./seo-content-refresher.md",
+        "./seo-meta-optimizer.md",
+        "./seo-structure-architect.md",
+        "./seo-snippet-hunter.md",
+        "./seo-authority-builder.md",
+        "./seo-cannibalization-detector.md",
+        "./search-specialist.md"
+      ]
+    },
+    {
+      "name": "business-operations",
+      "source": "./",
+      "description": "Business analysis, HR, legal, sales, and customer support automation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "business",
+        "hr",
+        "legal",
+        "sales",
+        "customer-support"
+      ],
+      "category": "business",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./business-analyst.md",
+        "./hr-pro.md",
+        "./legal-advisor.md",
+        "./risk-manager.md",
+        "./sales-automator.md",
+        "./content-marketer.md",
+        "./customer-support.md",
+        "./payment-integration.md"
+      ]
+    },
+    {
+      "name": "specialized-tools",
+      "source": "./",
+      "description": "Specialized agents for documentation, diagramming, tutorials, and legacy modernization",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "documentation",
+        "mermaid",
+        "tutorials",
+        "legacy-modernization",
+        "prompt-engineering"
+      ],
+      "category": "utilities",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./api-documenter.md",
+        "./mermaid-expert.md",
+        "./minecraft-bukkit-pro.md",
+        "./legacy-modernizer.md",
+        "./tutorial-engineer.md",
+        "./prompt-engineer.md",
+        "./reference-builder.md"
+      ]
+    },
+    {
+      "name": "persona-synthesis-framework",
+      "source": "./",
+      "description": "Advanced persona design, synthesis, and massive-scale persona generation framework (PersonaHub)",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "persona",
+        "synthesis",
+        "persona-hub",
+        "synthetic-data",
+        "character-design"
+      ],
+      "category": "ai-ml",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./persona-corpus-generator.md",
+        "./persona-synthesis-orchestrator.md",
+        "./persona-hub-architect.md",
+        "./poly-modal-persona-designer.md",
+        "./synthetic-data-composer.md"
+      ]
+    },
+    {
+      "name": "educational-scaffolding",
+      "source": "./",
+      "description": "GenAI-enabled self-regulated learning scaffolding for educational support",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "education",
+        "scaffolding",
+        "self-regulated-learning",
+        "genai"
+      ],
+      "category": "education",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./genai-education-scaffolding.md"
+      ]
+    },
+    {
+      "name": "reality-narrative-integration",
+      "source": "./",
+      "description": "Reality-narrative research framework for bridging practical reality and narrative understanding",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "research",
+        "narrative",
+        "reality-integration",
+        "storytelling"
+      ],
+      "category": "research",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./reality-narrative-researcher.md"
+      ]
+    },
+    {
+      "name": "system-orchestration",
+      "source": "./",
+      "description": "System orchestration and cartography agents including Conductor and Clarion",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "orchestration",
+        "system-mapping",
+        "coordination",
+        "cartography"
+      ],
+      "category": "utilities",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./Conductor.md",
+        "./Clarion_The_System_Cartographer_Instructions.md",
+        "./ios-screen-observer.md"
+      ]
+    }
+  ]
+}
