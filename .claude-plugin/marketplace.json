@@ -33,11 +33,11 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./ai-engineer.md",
-        "./backend-architect.md",
-        "./frontend-developer.md",
-        "./mobile-developer.md",
-        "./deployment-engineer.md"
+        "./agents/ai-engineer.md",
+        "./agents/backend-architect.md",
+        "./agents/frontend-developer.md",
+        "./agents/mobile-developer.md",
+        "./agents/deployment-engineer.md"
       ]
     },
     {
@@ -64,20 +64,20 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./python-pro.md",
-        "./javascript-pro.md",
-        "./typescript-pro.md",
-        "./java-pro.md",
-        "./golang-pro.md",
-        "./rust-pro.md",
-        "./ruby-pro.md",
-        "./php-pro.md",
-        "./cpp-pro.md",
-        "./csharp-pro.md",
-        "./c-pro.md",
-        "./scala-pro.md",
-        "./elixir-pro.md",
-        "./sql-pro.md"
+        "./agents/python-pro.md",
+        "./agents/javascript-pro.md",
+        "./agents/typescript-pro.md",
+        "./agents/java-pro.md",
+        "./agents/golang-pro.md",
+        "./agents/rust-pro.md",
+        "./agents/ruby-pro.md",
+        "./agents/php-pro.md",
+        "./agents/cpp-pro.md",
+        "./agents/csharp-pro.md",
+        "./agents/c-pro.md",
+        "./agents/scala-pro.md",
+        "./agents/elixir-pro.md",
+        "./agents/sql-pro.md"
       ]
     },
     {
@@ -103,12 +103,12 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./deployment-engineer.md",
-        "./devops-troubleshooter.md",
-        "./cloud-architect.md",
-        "./terraform-specialist.md",
-        "./network-engineer.md",
-        "./incident-responder.md"
+        "./agents/deployment-engineer.md",
+        "./agents/devops-troubleshooter.md",
+        "./agents/cloud-architect.md",
+        "./agents/terraform-specialist.md",
+        "./agents/network-engineer.md",
+        "./agents/incident-responder.md"
       ]
     },
     {
@@ -134,13 +134,13 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./data-engineer.md",
-        "./data-scientist.md",
-        "./database-admin.md",
-        "./database-optimizer.md",
-        "./ml-engineer.md",
-        "./mlops-engineer.md",
-        "./quant-analyst.md"
+        "./agents/data-engineer.md",
+        "./agents/data-scientist.md",
+        "./agents/database-admin.md",
+        "./agents/database-optimizer.md",
+        "./agents/ml-engineer.md",
+        "./agents/mlops-engineer.md",
+        "./agents/quant-analyst.md"
       ]
     },
     {
@@ -166,12 +166,12 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./code-reviewer.md",
-        "./test-automator.md",
-        "./debugger.md",
-        "./error-detective.md",
-        "./performance-engineer.md",
-        "./security-auditor.md"
+        "./agents/code-reviewer.md",
+        "./agents/test-automator.md",
+        "./agents/debugger.md",
+        "./agents/error-detective.md",
+        "./agents/performance-engineer.md",
+        "./agents/security-auditor.md"
       ]
     },
     {
@@ -196,11 +196,11 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./architect-review.md",
-        "./docs-architect.md",
-        "./graphql-architect.md",
-        "./dx-optimizer.md",
-        "./context-manager.md"
+        "./agents/architect-review.md",
+        "./agents/docs-architect.md",
+        "./agents/graphql-architect.md",
+        "./agents/dx-optimizer.md",
+        "./agents/context-manager.md"
       ]
     },
     {
@@ -226,17 +226,17 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./seo-keyword-strategist.md",
-        "./seo-content-planner.md",
-        "./seo-content-writer.md",
-        "./seo-content-auditor.md",
-        "./seo-content-refresher.md",
-        "./seo-meta-optimizer.md",
-        "./seo-structure-architect.md",
-        "./seo-snippet-hunter.md",
-        "./seo-authority-builder.md",
-        "./seo-cannibalization-detector.md",
-        "./search-specialist.md"
+        "./agents/seo-keyword-strategist.md",
+        "./agents/seo-content-planner.md",
+        "./agents/seo-content-writer.md",
+        "./agents/seo-content-auditor.md",
+        "./agents/seo-content-refresher.md",
+        "./agents/seo-meta-optimizer.md",
+        "./agents/seo-structure-architect.md",
+        "./agents/seo-snippet-hunter.md",
+        "./agents/seo-authority-builder.md",
+        "./agents/seo-cannibalization-detector.md",
+        "./agents/search-specialist.md"
       ]
     },
     {
@@ -262,14 +262,14 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./business-analyst.md",
-        "./hr-pro.md",
-        "./legal-advisor.md",
-        "./risk-manager.md",
-        "./sales-automator.md",
-        "./content-marketer.md",
-        "./customer-support.md",
-        "./payment-integration.md"
+        "./agents/business-analyst.md",
+        "./agents/hr-pro.md",
+        "./agents/legal-advisor.md",
+        "./agents/risk-manager.md",
+        "./agents/sales-automator.md",
+        "./agents/content-marketer.md",
+        "./agents/customer-support.md",
+        "./agents/payment-integration.md"
       ]
     },
     {
@@ -295,13 +295,13 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./api-documenter.md",
-        "./mermaid-expert.md",
-        "./minecraft-bukkit-pro.md",
-        "./legacy-modernizer.md",
-        "./tutorial-engineer.md",
-        "./prompt-engineer.md",
-        "./reference-builder.md"
+        "./agents/api-documenter.md",
+        "./agents/mermaid-expert.md",
+        "./agents/minecraft-bukkit-pro.md",
+        "./agents/legacy-modernizer.md",
+        "./agents/tutorial-engineer.md",
+        "./agents/prompt-engineer.md",
+        "./agents/reference-builder.md"
       ]
     },
     {
@@ -327,11 +327,11 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./persona-corpus-generator.md",
-        "./persona-synthesis-orchestrator.md",
-        "./persona-hub-architect.md",
-        "./poly-modal-persona-designer.md",
-        "./synthetic-data-composer.md"
+        "./agents/persona-corpus-generator.md",
+        "./agents/persona-synthesis-orchestrator.md",
+        "./agents/persona-hub-architect.md",
+        "./agents/poly-modal-persona-designer.md",
+        "./agents/synthetic-data-composer.md"
       ]
     },
     {
@@ -356,7 +356,7 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./genai-education-scaffolding.md"
+        "./agents/genai-education-scaffolding.md"
       ]
     },
     {
@@ -381,7 +381,7 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./reality-narrative-researcher.md"
+        "./agents/reality-narrative-researcher.md"
       ]
     },
     {
@@ -408,7 +408,7 @@
       "agents": [
         "./Conductor.md",
         "./Clarion_The_System_Cartographer_Instructions.md",
-        "./ios-screen-observer.md"
+        "./agents/ios-screen-observer.md"
       ]
     }
   ]
