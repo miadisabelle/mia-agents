@@ -233,8 +233,11 @@ async def agent_chat(request: ChatRequest):
         # Retrieve session history
         conversation_history = await get_session_history(request.session_id)
         
-        # Call LLM
-        response = await openai.ChatCompletion.acreate(
+        # Call LLM (OpenAI v1.x API)
+        from openai import AsyncOpenAI
+        client = AsyncOpenAI()
+        
+        response = await client.chat.completions.create(
             model="gpt-4",
             messages=[
                 {"role": "system", "content": system_prompt},
@@ -374,7 +377,12 @@ async def generate_chord_progression(context: dict) -> dict:
         c.quarterLength = 4.0
         s.append(c)
     
-    musicxml = s.write('musicxml')
+    # Write to temporary file and read content
+    import tempfile
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.xml', delete=False) as f:
+        s.write('musicxml', fp=f.name)
+        with open(f.name, 'r') as xml_file:
+            musicxml = xml_file.read()
     
     return {
         'description': f"{' - '.join(progression)} in {key_str}",
@@ -398,7 +406,12 @@ async def generate_melody(context: dict) -> dict:
         n.quarterLength = 1.0
         s.append(n)
     
-    musicxml = s.write('musicxml')
+    # Write to temporary file and read content
+    import tempfile
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.xml', delete=False) as f:
+        s.write('musicxml', fp=f.name)
+        with open(f.name, 'r') as xml_file:
+            musicxml = xml_file.read()
     
     return {
         'description': f"Ascending and descending scale in {key_str}",
