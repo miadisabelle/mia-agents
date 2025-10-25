@@ -193,7 +193,7 @@ python-multipart = "^0.0.6"
 python-socketio = "^5.9.0"
 openai = "^0.27.0"
 httpx = "^0.24.0"
-python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+pyjwt = {extras = ["crypto"], version = "^2.8.0"}
 passlib = {extras = ["bcrypt"], version = "^1.7.4"}
 
 [tool.poetry.group.dev.dependencies]
@@ -374,7 +374,7 @@ RUN apt-get update && apt-get install -y \
 COPY pyproject.toml poetry.lock ./
 RUN pip install poetry && \
     poetry config virtualenvs.create false && \
-    poetry install --no-dev
+    poetry install --only main
 
 # Copy application code
 COPY . .
