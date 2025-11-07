@@ -32,6 +32,7 @@ claude plugin install jgwill/mia-agents-creative-framework/persona-synthesis-fra
 - **educational-scaffolding**: GenAI-enabled self-regulated learning support
 - **reality-narrative-integration**: Research framework for narrative understanding
 - **system-orchestration**: Conductor and Clarion system mapping agents
+- **ceremony-spiral**: Indigenous research methodologies in distributed systems design
 
 See [FEATURES.md](FEATURES.md) for detailed capabilities of each plugin.
 
