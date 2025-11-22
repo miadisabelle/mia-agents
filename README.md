@@ -23,7 +23,7 @@ claude plugin install jgwill/mia-agents-creative-framework/persona-synthesis-fra
 - **language-specialists**: 14 language-specific experts (Python, JS, Rust, Go, etc.)
 - **devops-infrastructure**: Cloud, Kubernetes, Terraform, deployment automation
 - **data-ml-engineering**: Data science, ML ops, quantitative analysis
-- **quality-debugging**: Code review, testing, error detection with structural problem-solving
+- **quality-debugging**: Code review, testing, error detection with structural thinking
 - **architecture-design**: System architecture, GraphQL, context management
 - **seo-content-suite**: Complete SEO toolkit with 11 specialized agents
 - **business-operations**: Business analysis, HR, legal, sales automation
