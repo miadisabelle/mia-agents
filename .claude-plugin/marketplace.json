@@ -410,6 +410,44 @@
         "./Clarion_The_System_Cartographer_Instructions.md",
         "./agents/ios-screen-observer.md"
       ]
+    },
+    {
+      "name": "ceremony-spiral",
+      "source": "./",
+      "description": "Indigenous knowledge-centered framework integrating ceremonial practice with distributed systems. Agents for relational accountability, reciprocity modeling, narrative immersion, and decolonizing technology design.",
+      "version": "1.1.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "indigenous-research",
+        "ceremony",
+        "relational-accountability",
+        "reciprocity",
+        "decolonizing-technology",
+        "structural-dynamics",
+        "github-integration",
+        "narrative-immersion",
+        "polymorphic-interfaces",
+        "two-eyed-seeing"
+      ],
+      "category": "research",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./agents/ceremony-spiral-architect.md",
+        "./agents/indigenous-knowledge-steward.md",
+        "./agents/reciprocity-flow-analyst.md",
+        "./agents/github-ceremony-integrator.md",
+        "./agents/academic-research-advisor.md",
+        "./agents/mcp-ceremony-coordinator.md",
+        "./agents/narrative-immersion-agent.md",
+        "./agents/miawa-pascone-interface-agent.md"
+      ]
     }
   ]
 }
