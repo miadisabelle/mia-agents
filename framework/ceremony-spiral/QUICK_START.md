@@ -12,7 +12,7 @@ Ceremony Spiral is a framework that transforms technology development from probl
 
 **Key Shift**: From "What problems do we solve?" to "What relationships do we serve?"
 
-## The Six Agents - Who to Ask When
+## The Eight Agents - Who to Ask When
 
 ### 🏛️ Ceremony Spiral Architect
 **Ask when**: You need system architecture, API design, database models, technical infrastructure planning
@@ -37,6 +37,14 @@ Ceremony Spiral is a framework that transforms technology development from probl
 ### 🎭 MCP Ceremony Coordinator
 **Ask when**: You need digital ceremony spaces, real-time collaboration, auto-updating notes, protocol enforcement
 **Example**: "How do I set up an MCP server for collaborative ceremonies?"
+
+### 📖 Narrative Immersion Agent
+**Ask when**: You need to transform sessions/code into story form, extract character development, create dialogue scaffolds
+**Example**: "How do I turn this ceremony session into a three-act narrative that reveals the transformation?"
+
+### 🎨 Miawa Pascone Interface Agent
+**Ask when**: You need UI/UX design for Two-Eyed Seeing, Four Directions navigation, polymorphic sessions, or sacred knowledge interfaces
+**Example**: "How do I design an interface that shows both Indigenous and Western perspectives simultaneously?"
 
 ## Essential Documents
 

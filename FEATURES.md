@@ -44,7 +44,7 @@ This document outlines the key features and capabilities developed, derived from
 - **Description:** A comprehensive framework integrating Indigenous research methodologies with distributed systems design, creating a paradigm shift from problem-solving to collaborative storytelling. The Ceremony Spiral framework honors Shawn Wilson's relational accountability principles and Robert Fritz's structural tension dynamics to create advancing spirals where technical implementation becomes ceremonial practice. This feature includes six specialized agents, complete API specifications, academic article foundations, and implementation guidance for creating technology that serves relationship building rather than extraction.
 
 - **Core Framework Components:**
-  - **Six Specialized Agents**: Ceremony Spiral Architect, Indigenous Knowledge Steward, Reciprocity Flow Analyst, GitHub Ceremony Integrator, Academic Research Advisor, and MCP Ceremony Coordinator
+  - **Eight Specialized Agents**: Ceremony Spiral Architect, Indigenous Knowledge Steward, Reciprocity Flow Analyst, GitHub Ceremony Integrator, Academic Research Advisor, MCP Ceremony Coordinator, Narrative Immersion Agent, and Miawa Pascone Interface Agent
   - **Theoretical Foundation**: Integration of Indigenous research methodology (Four R's: Respect, Reciprocity, Relevance, Responsibility) with structural tension dynamics
   - **Technical Architecture**: Node.js/Express backend, MongoDB + Neo4j databases, React.js frontend, GitHub/MCP integration
   - **API Specifications**: Comprehensive endpoints for ceremony management, GitHub integration, visualization, and MCP coordination
@@ -57,6 +57,8 @@ This document outlines the key features and capabilities developed, derived from
   - **GitHub Ceremony Integrator**: Webhook handlers, Koea Spiral extension, issue tracking with relational accountability, ceremonial commit protocols
   - **Academic Research Advisor**: Theoretical framework development, academic article guidance, research question formulation, literature review integration
   - **MCP Ceremony Coordinator**: Digital ceremonial space creation, real-time collaboration, auto-updating ceremony notes, cultural protocol enforcement
+  - **Narrative Immersion Agent**: Story remixing from technical artifacts, character development tracking, three-act ceremony structures, theme extraction from code and sessions
+  - **Miawa Pascone Interface Agent**: Polymorphic UI design, Two-Eyed Seeing interfaces, Four Directions navigation, ceremonial spiral session management, sacred knowledge protection interfaces
 
 - **Key Innovations:**
   - **Ceremonial Computing**: Technology that honors spiritual and cultural dimensions of human experience

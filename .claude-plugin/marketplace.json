@@ -414,8 +414,8 @@
     {
       "name": "ceremony-spiral",
       "source": "./",
-      "description": "Indigenous knowledge-centered framework integrating ceremonial practice with distributed systems. Agents for relational accountability, reciprocity modeling, and decolonizing technology design.",
-      "version": "1.0.0",
+      "description": "Indigenous knowledge-centered framework integrating ceremonial practice with distributed systems. Agents for relational accountability, reciprocity modeling, narrative immersion, and decolonizing technology design.",
+      "version": "1.1.0",
       "author": {
         "name": "Guillaume Isabelle",
         "url": "https://github.com/jgwill"
@@ -430,7 +430,10 @@
         "reciprocity",
         "decolonizing-technology",
         "structural-dynamics",
-        "github-integration"
+        "github-integration",
+        "narrative-immersion",
+        "polymorphic-interfaces",
+        "two-eyed-seeing"
       ],
       "category": "research",
       "strict": false,
@@ -441,7 +444,9 @@
         "./agents/reciprocity-flow-analyst.md",
         "./agents/github-ceremony-integrator.md",
         "./agents/academic-research-advisor.md",
-        "./agents/mcp-ceremony-coordinator.md"
+        "./agents/mcp-ceremony-coordinator.md",
+        "./agents/narrative-immersion-agent.md",
+        "./agents/miawa-pascone-interface-agent.md"
       ]
     }
   ]

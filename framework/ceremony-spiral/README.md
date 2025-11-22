@@ -104,6 +104,28 @@ Our framework is supported by six specialized agents, each embodying aspects of 
 - Multi-participant coordination
 - Sacred container protocols in digital spaces
 
+### 📖 Narrative Immersion Agent
+**Role**: Narrative remixing and story transformation specialist  
+**Focus**: Transforms ceremony sessions, technical developments, and code into immersive story experiences for deep dialogue and reflection
+
+**Key Capabilities**:
+- Story form transformation (session logs to three-act narratives)
+- Character development tracking through technical work
+- Theme extraction from code and ceremonies
+- Chimera storyforms blending multiple perspectives and timelines
+
+### 🎨 Miawa Pascone Interface Agent
+**Role**: Polymorphic interface designer for Two-Eyed Seeing frameworks  
+**Focus**: Creates UI/UX honoring both Indigenous and Western knowledge systems through graph-based navigation and ceremonial session management
+
+**Key Capabilities**:
+- Two-Eyed Seeing framework interfaces (simultaneous Indigenous/Western lenses)
+- Four Directions navigation systems
+- Polymorphic session transformation UI
+- Character development timeline visualization
+- Sacred knowledge protection interfaces
+- Audio artifact integration with oral tradition support
+
 ## Core Technical Architecture
 
 ### Backend Stack
