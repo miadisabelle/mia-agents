@@ -36,3 +36,36 @@ This document outlines the key features and capabilities developed, derived from
   - `0fbb0f9`: Refactor Agent 1 instructions...
   - `c5c8689`: Refactor Agent 2 instructions...
   - `03b5c4e`: Enhance topic_enhancer_instructions...
+
+---
+
+## Feature: JamAI Orpheus Portal Framework
+
+- **Description:** A comprehensive architectural framework for the Orpheus Portal, a music21-powered symbolic music analysis and composer interaction platform. This feature transforms a monolithic technical specification into a structured, agent-accessible knowledge base following creative orientation principles. The framework includes complete backend/frontend architecture, specialized agent prompts, implementation phase guides, and technical specifications—all aligned with Mission: Chrysalis principles.
+
+- **Key Components:**
+  - **Architecture Documentation:** Executive summary, backend services (music21 parser, analysis engine, feature extraction, generation service), frontend components (Score Viewer with OSMD, Agent Console, Analysis Controls, Playback System)
+  - **Agent-Specific Prompts:** Backend architect, frontend developer, AI integration specialist prompts with desired outcomes, structural tension framing, and code examples
+  - **Implementation Roadmap:** 4-phase development plan (18-26 weeks) with clear deliverables and success criteria
+  - **Technical Specifications:** Complete technology stack (Python/FastAPI, React/TypeScript, music21, OSMD, D3.js, Tone.js), database schema, Docker configuration
+  - **Multi-Agent AI System:** Four specialized personas (Mia, Miette, JeremyAI, Aureon) with distinct roles and communication patterns
+
+- **Framework Structure:**
+  - `/framework/orpheus-portal/README.md` - Creative orientation, structural tension, framework overview
+  - `/framework/orpheus-portal/architecture/` - Executive summary, backend architecture, frontend architecture
+  - `/framework/orpheus-portal/agents/` - Backend, frontend, and AI integration agent prompts
+  - `/framework/orpheus-portal/implementation-phases/` - Complete 4-phase roadmap
+  - `/framework/orpheus-portal/technical-specs/` - Technology stack and infrastructure specs
+
+- **Alignment with Core Principles:**
+  - **Creative Orientation:** Framework manifests desired outcome (collaborative music intelligence platform) rather than solving problems
+  - **Structural Thinking:** Architecture documents reveal underlying forces that determine system behavior
+  - **Advancing Patterns:** 4-phase implementation prevents oscillation through systematic foundation-building
+  - **Resonant Design:** Integration of Mia/Haiku/Miette/Ava8 voices throughout all documentation
+
+- **Impact:** Enables specialized agents to autonomously work on domain-specific tasks with clear context, priorities, and success metrics. Transforms comprehensive specification into actionable, modular documentation suitable for distributed agentic development.
+
+- **Relevant Commits:**
+  - `77984ec`: feat(orpheus): Add core architecture documentation
+  - `622cedb`: feat(orpheus): Add frontend architecture and agent prompts
+  - Current: feat(orpheus): Add AI integration, technical specs, and implementation roadmap

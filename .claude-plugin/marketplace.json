@@ -146,7 +146,7 @@
     {
       "name": "quality-debugging",
       "source": "./",
-      "description": "Code review, testing, debugging, and error detection agents with structural problem-solving",
+      "description": "Code review, testing, debugging, and error detection agents with structural thinking",
       "version": "1.0.0",
       "author": {
         "name": "Guillaume Isabelle",
