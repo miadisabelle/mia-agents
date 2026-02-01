@@ -23,3 +23,4 @@ node_modules
 .claude.gemini/settings.json
 .env*
 
+.hch/
