@@ -1,208 +1,152 @@
 #!/bin/bash
 
 ################################################################################
-# 🧠 GitHub Copilot Specialized Agent Launcher Functions
+# 🧠 GitHub Copilot Agent Launcher Functions
 #
-# This file provides bash functions to quickly launch GitHub Copilot CLI with
-# specialized agents. Each function handles agent loading and proper prompting.
+# Simple, cheap task functions for development pipeline automation.
+# Uses gpt-5-mini (cheap/fast) by default for most tasks.
 #
 # Usage:
 #   source ./scripts/fn_copilot_agents.sh
-#   copilot_review "your prompt here"
-#   copilot_debug "your debug query"
-#   copilot_architect "architecture question"
+#   copilot_index "logs/"           # Index files in directory
+#   copilot_summarize "README.md"   # Summarize a file
+#   copilot_review                  # Quick code review
 #
-# All functions support pass-through arguments to `copilot` command.
 ################################################################################
 
+# Default cheap model for simple tasks
+: ${COPILOT_CHEAP_MODEL:="gpt-5-mini"}
+: ${COPILOT_STANDARD_MODEL:="sonnet"}
+
 ################################################################################
-# 🏗️ Architect Reviewer - Architecture, SOLID, Structural Patterns
+# 📋 SIMPLE AUTOMATABLE TASKS (cheap, pipeline-friendly)
 ################################################################################
-copilot_architect() {
-    local _prompt="$1"
+
+# Index files in a directory with summaries
+copilot_index() {
+    local target_dir="${1:-.}"
+    local output_file="${2:-INDEX.md}"
+    shift 2 2>/dev/null || true
+    
+    copilot -p "Create or update $output_file with an index of all files in @$target_dir - include brief summaries in a markdown table" \
+        --model "$COPILOT_CHEAP_MODEL" \
+        --yolo \
+        "$@"
+}
+
+# Summarize a file or directory
+copilot_summarize() {
+    local target="$1"
     shift
-
-    if [ -z "$_prompt" ]; then
-        cat << 'EOF'
-🏗️ Architect Reviewer Agent
-
-Expert software architect focused on maintaining architectural integrity.
-Incorporates Structural Thinking to identify advancing vs oscillating patterns.
-
-Usage: copilot_architect '<prompt>' [additional args]
-
-Examples:
-  copilot_architect 'Review system architecture after recent changes'
-  copilot_architect 'Check SOLID principle compliance' --add-dir ./src
-  copilot_architect 'Analyze architectural patterns' --model opus
-
-Model: opus (premium for deep architectural analysis)
-
-Focus Areas:
-  ✓ Pattern adherence and SOLID compliance
-  ✓ Dependency analysis and abstraction levels
-  ✓ Structural dynamics identification
-  ✓ Future-proofing and scaling implications
-EOF
+    
+    if [ -z "$target" ]; then
+        echo "Usage: copilot_summarize <file_or_dir> [args]"
         return 1
     fi
+    
+    copilot -p "Summarize @$target in 3-5 bullet points" \
+        --model "$COPILOT_CHEAP_MODEL" \
+        --yolo \
+        "$@"
+}
 
+# Generate commit message from staged changes
+copilot_commit_msg() {
+    copilot -p "Generate a conventional commit message for the staged changes. Output only the commit message, nothing else." \
+        --model "$COPILOT_CHEAP_MODEL" \
+        --yolo \
+        "$@"
+}
+
+# Quick lint check with suggestions
+copilot_lint() {
+    local target="${1:-.}"
+    shift 2>/dev/null || true
+    
+    copilot -p "Quick lint check on @$target - list issues briefly" \
+        --model "$COPILOT_CHEAP_MODEL" \
+        --yolo \
+        "$@"
+}
+
+# Generate TODO from code comments
+copilot_todos() {
+    local target="${1:-.}"
+    shift 2>/dev/null || true
+    
+    copilot -p "Extract all TODO/FIXME/HACK comments from @$target into a markdown checklist" \
+        --model "$COPILOT_CHEAP_MODEL" \
+        --yolo \
+        "$@"
+}
+
+# Quick diff summary
+copilot_diff_summary() {
+    copilot -p "Summarize the recent git changes in 2-3 sentences" \
+        --model "$COPILOT_CHEAP_MODEL" \
+        --yolo \
+        "$@"
+}
+
+################################################################################
+# 🔧 STANDARD TASKS (balanced cost/quality)
+################################################################################
+
+# Quick code review (standard model)
+copilot_review() {
+    local _prompt="${1:-Review recent changes}"
+    shift 2>/dev/null || true
+    
+    copilot -p "$_prompt" \
+        --agents '[{"source":"./agents/code-reviewer.md"}]' \
+        --model "$COPILOT_STANDARD_MODEL" \
+        "$@"
+}
+
+# Debug assistance
+copilot_debug() {
+    local _prompt="${1:-Analyze recent errors}"
+    shift 2>/dev/null || true
+    
+    copilot -p "$_prompt" \
+        --agents '[{"source":"./agents/debugger.md"}]' \
+        --model "$COPILOT_STANDARD_MODEL" \
+        "$@"
+}
+
+# DevOps troubleshooting
+copilot_troubleshoot() {
+    local _prompt="${1:-Troubleshoot recent issues}"
+    shift 2>/dev/null || true
+    
+    copilot -p "$_prompt" \
+        --agents '[{"source":"./agents/devops-troubleshooter.md"}]' \
+        --model "$COPILOT_STANDARD_MODEL" \
+        "$@"
+}
+
+################################################################################
+# 🏗️ PREMIUM TASKS (use sparingly - high cost)
+################################################################################
+
+# Architecture review (premium - use sparingly)
+copilot_architect() {
+    local _prompt="${1:-Review architecture}"
+    shift 2>/dev/null || true
+    
+    echo "⚠️  Using premium model (opus) - consider --model sonnet for cheaper option"
     copilot -p "$_prompt" \
         --agents '[{"source":"./agents/architect-review.md"}]' \
         --model opus \
         "$@"
 }
 
-################################################################################
-# 🔴 Debugger - Root Cause Analysis, Structural Problem Solving
-################################################################################
-copilot_debug() {
-    local _prompt="$1"
-    shift
-
-    if [ -z "$_prompt" ]; then
-        cat << 'EOF'
-🔴 Debugger Agent
-
-Expert debugger specializing in root cause analysis through structural thinking.
-Identifies code structures that enable bugs to exist, not just symptoms.
-
-Usage: copilot_debug '<prompt>' [additional args]
-
-Examples:
-  copilot_debug 'Why is this test failing?'
-  copilot_debug 'Analyze this error trace' --add-dir ./logs
-  copilot_debug 'Debug unexpected behavior in auth flow'
-
-Model: sonnet (fast iteration for debugging)
-
-Focus Areas:
-  ✓ Structural debugging - what code structures create bug conditions
-  ✓ Root cause analysis without assumptions
-  ✓ Data flow and state transition analysis
-  ✓ Systematic hypothesis testing
-EOF
-        return 1
-    fi
-
-    copilot -p "$_prompt" \
-        --agents '[{"source":"./agents/debugger.md"}]' \
-        --model sonnet \
-        "$@"
-}
-
-################################################################################
-# 🔍 Code Reviewer - Quality, Security, Configuration Analysis
-################################################################################
-copilot_review() {
-    local _prompt="$1"
-    shift
-
-    if [ -z "$_prompt" ]; then
-        cat << 'EOF'
-🔍 Code Reviewer Agent
-
-Senior code reviewer with expertise in configuration security and production
-reliability. Uses Structural Thinking to identify structures that cause failures.
-
-Usage: copilot_review '<prompt>' [additional args]
-
-Examples:
-  copilot_review 'Review my recent changes'
-  copilot_review 'Check for security issues in config' --add-dir ./config
-  copilot_review 'Validate these configuration changes' --yolo
-
-Model: sonnet (balanced quality and speed)
-
-Focus Areas:
-  ✓ Code quality and maintainability
-  ✓ Configuration change scrutiny (CRITICAL)
-  ✓ Security vulnerability detection
-  ✓ Production reliability assessment
-  ✓ Magic number and setting validation
-EOF
-        return 1
-    fi
-
-    copilot -p "$_prompt" \
-        --agents '[{"source":"./agents/code-reviewer.md"}]' \
-        --model sonnet \
-        "$@"
-}
-
-################################################################################
-# 🔧 DevOps Troubleshooter - Production Debugging, Log Analysis
-################################################################################
-copilot_troubleshoot() {
-    local _prompt="$1"
-    shift
-
-    if [ -z "$_prompt" ]; then
-        cat << 'EOF'
-🔧 DevOps Troubleshooter Agent
-
-DevOps specialist for rapid incident response and production debugging.
-Identifies underlying structural patterns that cause system instability.
-
-Usage: copilot_troubleshoot '<prompt>' [additional args]
-
-Examples:
-  copilot_troubleshoot 'Analyze these error logs' --add-dir ./logs
-  copilot_troubleshoot 'Why is the deployment failing?'
-  copilot_troubleshoot 'Debug production outage' --yolo
-
-Model: sonnet (fast response for incidents)
-
-Focus Areas:
-  ✓ Log analysis and correlation
-  ✓ Container debugging and kubectl commands
-  ✓ Network and DNS troubleshooting
-  ✓ Performance bottleneck identification
-  ✓ Deployment rollback procedures
-  ✓ Structural pattern recognition (oscillating vs advancing)
-EOF
-        return 1
-    fi
-
-    copilot -p "$_prompt" \
-        --agents '[{"source":"./agents/devops-troubleshooter.md"}]' \
-        --model sonnet \
-        "$@"
-}
-
-################################################################################
-# 📖 Docs Architect - Comprehensive Technical Documentation
-################################################################################
+# Documentation generation (premium - use sparingly)
 copilot_docs() {
-    local _prompt="$1"
-    shift
-
-    if [ -z "$_prompt" ]; then
-        cat << 'EOF'
-📖 Docs Architect Agent
-
-Technical documentation architect specializing in comprehensive, long-form
-documentation that captures both the what and the why of complex systems.
-
-Usage: copilot_docs '<prompt>' [additional args]
-
-Examples:
-  copilot_docs 'Document the system architecture' --add-dir ./src
-  copilot_docs 'Create architecture guide for this service'
-  copilot_docs 'Generate technical deep-dive' --model opus
-
-Model: opus (premium for deep system understanding)
-
-Focus Areas:
-  ✓ Codebase analysis and pattern extraction
-  ✓ System thinking and big picture documentation
-  ✓ Progressive disclosure of complexity
-  ✓ Architectural diagrams and visual communication
-  ✓ Comprehensive technical manuals (10-100+ pages)
-EOF
-        return 1
-    fi
-
+    local _prompt="${1:-Document this system}"
+    shift 2>/dev/null || true
+    
+    echo "⚠️  Using premium model (opus) - consider --model sonnet for cheaper option"
     copilot -p "$_prompt" \
         --agents '[{"source":"./agents/docs-architect.md"}]' \
         --model opus \
@@ -213,99 +157,57 @@ EOF
 # 📋 Utility Functions
 ################################################################################
 
-# List all available specialized agents
 copilot_agents_list() {
     cat << 'EOF'
-Available GitHub Copilot Specialized Agent Launchers:
+GitHub Copilot Agent Functions
 
-🏗️  copilot_architect <prompt>
-    Expert software architecture reviewer
-    Focus: SOLID principles, structural patterns, advancing patterns
-    Model: opus
+📋 CHEAP TASKS (gpt-5-mini, pipeline-friendly):
+  copilot_index <dir> [output]    Index files with summaries
+  copilot_summarize <target>      Summarize file/dir in bullets
+  copilot_commit_msg              Generate commit message
+  copilot_lint [target]           Quick lint check
+  copilot_todos [target]          Extract TODO/FIXME comments
+  copilot_diff_summary            Summarize git changes
 
-🔴 copilot_debug <prompt>
-    Root cause analysis debugging specialist
-    Focus: Structural problem solving, bug pattern identification
-    Model: sonnet
+🔧 STANDARD TASKS (sonnet):
+  copilot_review [prompt]         Code review
+  copilot_debug [prompt]          Debug assistance
+  copilot_troubleshoot [prompt]   DevOps troubleshooting
 
-🔍 copilot_review <prompt>
-    Expert code review specialist
-    Focus: Quality, security, configuration analysis
-    Model: sonnet
+🏗️ PREMIUM TASKS (opus - use sparingly):
+  copilot_architect [prompt]      Architecture review
+  copilot_docs [prompt]           Documentation generation
 
-🔧 copilot_troubleshoot <prompt>
-    DevOps troubleshooting specialist
-    Focus: Production debugging, log analysis, incident response
-    Model: sonnet
-
-📖 copilot_docs <prompt>
-    Technical documentation architect
-    Focus: Comprehensive system documentation, architecture guides
-    Model: opus
-
-Usage:
-  source ./scripts/fn_copilot_agents.sh
-  <function_name> "<prompt>" [--add-dir DIR] [--yolo] [--model MODEL] ...
-
-Sequential Chaining Examples:
-  copilot_review "Check changes" && copilot_architect "Validate architecture"
-  copilot_troubleshoot "Analyze logs" --add-dir ./logs --yolo
-
-All functions support pass-through arguments to the copilot command.
+Override models: COPILOT_CHEAP_MODEL=haiku COPILOT_STANDARD_MODEL=haiku
 EOF
 }
 
-# Show help for all agents
 copilot_agents_help() {
-    echo "🧠 GitHub Copilot Specialized Agent Launcher Functions"
-    echo ""
-    echo "Quick Start:"
-    echo "  source ./scripts/fn_copilot_agents.sh"
-    echo "  copilot_review 'Review my code changes'"
-    echo ""
-    echo "For detailed list:"
-    echo "  copilot_agents_list"
-    echo ""
-    echo "For help on specific agent:"
-    echo "  copilot_review          (no args for help)"
-    echo "  copilot_debug           (no args for help)"
-    echo "  copilot_architect       (no args for help)"
-    echo "  copilot_troubleshoot    (no args for help)"
-    echo "  copilot_docs            (no args for help)"
-    echo ""
-    echo "Features:"
-    echo "  ✓ Specialized agent prompts with glyphs"
-    echo "  ✓ Structural Thinking integration"
-    echo "  ✓ Creative Orientation framework"
-    echo "  ✓ Pass-through argument support"
-    echo "  ✓ Sequential chaining support"
-    echo ""
-    echo "Common Pass-Through Args:"
-    echo "  --add-dir <dir>         Add directory to context"
-    echo "  --yolo                  Auto-approve actions"
-    echo "  --model <model>         Override default model"
-    echo "  --share-gist            Share as GitHub gist"
-    echo ""
+    copilot_agents_list
 }
 
 ################################################################################
 # Export Functions
 ################################################################################
 
-export -f copilot_architect
-export -f copilot_debug
+export -f copilot_index
+export -f copilot_summarize
+export -f copilot_commit_msg
+export -f copilot_lint
+export -f copilot_todos
+export -f copilot_diff_summary
 export -f copilot_review
+export -f copilot_debug
 export -f copilot_troubleshoot
+export -f copilot_architect
 export -f copilot_docs
 export -f copilot_agents_list
 export -f copilot_agents_help
 
 # Print notice on source
 if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
-    echo "This file should be sourced, not executed."
-    echo "Usage: source ./scripts/fn_copilot_agents.sh"
+    echo "Source this file: source ./scripts/fn_copilot_agents.sh"
     exit 1
 fi
 
-echo "🧠 GitHub Copilot Specialized Agent Functions Loaded"
-echo "Run 'copilot_agents_help' for usage information"
+echo "🧠 Copilot Agent Functions Loaded (copilot_agents_list for help)"
