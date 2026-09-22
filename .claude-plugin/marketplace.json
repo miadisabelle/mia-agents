@@ -6,303 +6,986 @@
     "url": "https://github.com/jgwill"
   },
   "metadata": {
-    "description": "Creative-oriented agent framework with 82 specialized agents built on RISE framework, Structural Thinking, and Creative Orientation principles",
-    "version": "1.0.0"
+    "description": "Creative-oriented agent framework with 182 specialized agents across 75 plugins, built on RISE framework, Structural Thinking, and Creative Orientation principles",
+    "version": "1.5.7"
   },
   "plugins": [
     {
-      "name": "creative-development-core",
-      "source": "./",
-      "description": "Core creative development agents with principled enhancement and structural thinking integration",
-      "version": "1.0.0",
+      "name": "code-documentation",
+      "source": "./plugins/code-documentation",
+      "description": "Documentation generation, code explanation, and technical writing with automated doc generation and tutorial creation",
+      "version": "1.2.0",
       "author": {
-        "name": "Guillaume Isabelle",
-        "url": "https://github.com/jgwill"
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
       },
-      "homepage": "https://github.com/jgwill/mia-agents",
-      "repository": "https://github.com/jgwill/mia-agents",
+      "homepage": "https://github.com/wshobson/agents",
       "license": "MIT",
-      "keywords": [
-        "creative-orientation",
-        "rise-framework",
-        "structural-thinking",
-        "development",
-        "ai-agents"
-      ],
-      "category": "development",
-      "strict": false,
-      "commands": [],
-      "agents": [
-        "./agents/ai-engineer.md",
-        "./agents/backend-architect.md",
-        "./agents/frontend-developer.md",
-        "./agents/mobile-developer.md",
-        "./agents/deployment-engineer.md"
-      ]
+      "category": "documentation"
     },
     {
-      "name": "language-specialists",
-      "source": "./",
-      "description": "Language-specific programming experts covering Python, JavaScript, TypeScript, and systems languages",
-      "version": "1.0.0",
+      "name": "debugging-toolkit",
+      "source": "./plugins/debugging-toolkit",
+      "description": "Interactive debugging, developer experience optimization, and smart debugging workflows",
+      "version": "1.2.0",
       "author": {
-        "name": "Guillaume Isabelle",
-        "url": "https://github.com/jgwill"
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
       },
-      "homepage": "https://github.com/jgwill/mia-agents",
-      "repository": "https://github.com/jgwill/mia-agents",
+      "homepage": "https://github.com/wshobson/agents",
       "license": "MIT",
-      "keywords": [
-        "python",
-        "javascript",
-        "typescript",
-        "rust",
-        "golang",
-        "languages"
-      ],
-      "category": "languages",
-      "strict": false,
-      "commands": [],
-      "agents": [
-        "./agents/python-pro.md",
-        "./agents/javascript-pro.md",
-        "./agents/typescript-pro.md",
-        "./agents/java-pro.md",
-        "./agents/golang-pro.md",
-        "./agents/rust-pro.md",
-        "./agents/ruby-pro.md",
-        "./agents/php-pro.md",
-        "./agents/cpp-pro.md",
-        "./agents/csharp-pro.md",
-        "./agents/c-pro.md",
-        "./agents/scala-pro.md",
-        "./agents/elixir-pro.md",
-        "./agents/sql-pro.md"
-      ]
+      "category": "development"
     },
     {
-      "name": "devops-infrastructure",
-      "source": "./",
-      "description": "DevOps and infrastructure specialists with creative problem-solving orientation",
-      "version": "1.0.0",
+      "name": "git-pr-workflows",
+      "source": "./plugins/git-pr-workflows",
+      "description": "Git workflow automation, pull request enhancement, and team onboarding processes",
+      "version": "1.3.0",
       "author": {
-        "name": "Guillaume Isabelle",
-        "url": "https://github.com/jgwill"
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
       },
-      "homepage": "https://github.com/jgwill/mia-agents",
-      "repository": "https://github.com/jgwill/mia-agents",
+      "homepage": "https://github.com/wshobson/agents",
       "license": "MIT",
-      "keywords": [
-        "devops",
-        "cloud",
-        "terraform",
-        "kubernetes",
-        "infrastructure"
-      ],
-      "category": "infrastructure",
-      "strict": false,
-      "commands": [],
-      "agents": [
-        "./agents/deployment-engineer.md",
-        "./agents/devops-troubleshooter.md",
-        "./agents/cloud-architect.md",
-        "./agents/terraform-specialist.md",
-        "./agents/network-engineer.md",
-        "./agents/incident-responder.md"
-      ]
+      "category": "workflows"
     },
     {
-      "name": "data-ml-engineering",
-      "source": "./",
-      "description": "Data engineering, ML operations, and quantitative analysis with structural orientation",
-      "version": "1.0.0",
+      "name": "backend-development",
+      "source": "./plugins/backend-development",
+      "description": "Backend API design, GraphQL architecture, workflow orchestration with Temporal, and test-driven backend development",
+      "version": "1.3.1",
       "author": {
-        "name": "Guillaume Isabelle",
-        "url": "https://github.com/jgwill"
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
       },
-      "homepage": "https://github.com/jgwill/mia-agents",
-      "repository": "https://github.com/jgwill/mia-agents",
+      "homepage": "https://github.com/wshobson/agents",
       "license": "MIT",
-      "keywords": [
-        "data-engineering",
-        "machine-learning",
-        "mlops",
-        "data-science",
-        "quant"
-      ],
+      "category": "development"
+    },
+    {
+      "name": "frontend-mobile-development",
+      "source": "./plugins/frontend-mobile-development",
+      "description": "Frontend UI development and mobile application implementation across platforms",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "development"
+    },
+    {
+      "name": "full-stack-orchestration",
+      "source": "./plugins/full-stack-orchestration",
+      "description": "End-to-end feature orchestration with testing, security, performance, and deployment",
+      "version": "1.3.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "workflows"
+    },
+    {
+      "name": "unit-testing",
+      "source": "./plugins/unit-testing",
+      "description": "Unit and integration test automation for Python and JavaScript with debugging support",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "testing"
+    },
+    {
+      "name": "tdd-workflows",
+      "source": "./plugins/tdd-workflows",
+      "description": "Test-driven development methodology with red-green-refactor cycles and code review",
+      "version": "1.3.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "workflows"
+    },
+    {
+      "name": "code-refactoring",
+      "source": "./plugins/code-refactoring",
+      "description": "Code cleanup, refactoring automation, and technical debt management with context restoration",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "utilities"
+    },
+    {
+      "name": "dependency-management",
+      "source": "./plugins/dependency-management",
+      "description": "Dependency auditing, version management, and security vulnerability scanning",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "utilities"
+    },
+    {
+      "name": "error-debugging",
+      "source": "./plugins/error-debugging",
+      "description": "Error analysis, trace debugging, and multi-agent problem diagnosis",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "utilities"
+    },
+    {
+      "name": "team-collaboration",
+      "source": "./plugins/team-collaboration",
+      "description": "Team workflows, issue management, standup automation, and developer experience optimization",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "utilities"
+    },
+    {
+      "name": "llm-application-dev",
+      "description": "LLM application development with LangGraph, RAG systems, vector search, and AI agent architectures for Claude 4.6 and GPT-5.2",
+      "version": "2.0.5",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/llm-application-dev",
       "category": "ai-ml",
-      "strict": false,
-      "commands": [],
-      "agents": [
-        "./agents/data-engineer.md",
-        "./agents/data-scientist.md",
-        "./agents/database-admin.md",
-        "./agents/database-optimizer.md",
-        "./agents/ml-engineer.md",
-        "./agents/mlops-engineer.md",
-        "./agents/quant-analyst.md"
-      ]
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
     },
     {
-      "name": "quality-debugging",
-      "source": "./",
-      "description": "Code review, testing, debugging, and error detection agents with structural thinking",
-      "version": "1.0.0",
+      "name": "agent-orchestration",
+      "source": "./plugins/agent-orchestration",
+      "description": "Multi-agent system optimization, agent improvement workflows, and context management",
+      "version": "1.2.1",
       "author": {
-        "name": "Guillaume Isabelle",
-        "url": "https://github.com/jgwill"
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
       },
-      "homepage": "https://github.com/jgwill/mia-agents",
-      "repository": "https://github.com/jgwill/mia-agents",
+      "homepage": "https://github.com/wshobson/agents",
       "license": "MIT",
-      "keywords": [
-        "quality",
-        "testing",
-        "debugging",
-        "code-review",
-        "error-detection"
-      ],
-      "category": "quality",
-      "strict": false,
-      "commands": [],
-      "agents": [
-        "./agents/code-reviewer.md",
-        "./agents/test-automator.md",
-        "./agents/debugger.md",
-        "./agents/error-detective.md",
-        "./agents/performance-engineer.md",
-        "./agents/security-auditor.md"
-      ]
+      "category": "ai-ml"
     },
     {
-      "name": "architecture-design",
-      "source": "./",
-      "description": "System architecture, context management, and design optimization agents",
-      "version": "1.0.0",
+      "name": "context-management",
+      "source": "./plugins/context-management",
+      "description": "Context persistence, restoration, and long-running conversation management",
+      "version": "1.2.0",
       "author": {
-        "name": "Guillaume Isabelle",
-        "url": "https://github.com/jgwill"
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
       },
-      "homepage": "https://github.com/jgwill/mia-agents",
-      "repository": "https://github.com/jgwill/mia-agents",
+      "homepage": "https://github.com/wshobson/agents",
       "license": "MIT",
-      "keywords": [
-        "architecture",
-        "design",
-        "graphql",
-        "context-management"
-      ],
-      "category": "development",
-      "strict": false,
-      "commands": [],
-      "agents": [
-        "./agents/architect-review.md",
-        "./agents/docs-architect.md",
-        "./agents/graphql-architect.md",
-        "./agents/dx-optimizer.md",
-        "./agents/context-manager.md"
-      ]
+      "category": "ai-ml"
     },
     {
-      "name": "seo-content-suite",
-      "source": "./",
-      "description": "Complete SEO and content strategy toolkit with 11 specialized agents",
-      "version": "1.0.0",
+      "name": "machine-learning-ops",
+      "description": "ML model training pipelines, hyperparameter tuning, model deployment automation, experiment tracking, and MLOps workflows",
+      "version": "1.2.1",
       "author": {
-        "name": "Guillaume Isabelle",
-        "url": "https://github.com/jgwill"
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
       },
-      "homepage": "https://github.com/jgwill/mia-agents",
-      "repository": "https://github.com/jgwill/mia-agents",
-      "license": "MIT",
-      "keywords": [
-        "seo",
-        "content-strategy",
-        "keywords",
-        "meta-optimization",
-        "search"
-      ],
-      "category": "marketing",
-      "strict": false,
-      "commands": [],
-      "agents": [
-        "./agents/seo-keyword-strategist.md",
-        "./agents/seo-content-planner.md",
-        "./agents/seo-content-writer.md",
-        "./agents/seo-content-auditor.md",
-        "./agents/seo-content-refresher.md",
-        "./agents/seo-meta-optimizer.md",
-        "./agents/seo-structure-architect.md",
-        "./agents/seo-snippet-hunter.md",
-        "./agents/seo-authority-builder.md",
-        "./agents/seo-cannibalization-detector.md",
-        "./agents/search-specialist.md"
-      ]
+      "source": "./plugins/machine-learning-ops",
+      "category": "ai-ml",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
     },
     {
-      "name": "business-operations",
-      "source": "./",
-      "description": "Business analysis, HR, legal, sales, and customer support automation",
+      "name": "data-engineering",
+      "description": "ETL pipeline construction, data warehouse design, batch processing workflows, and data-driven feature development",
+      "version": "1.3.1",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/data-engineering",
+      "category": "data",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "incident-response",
+      "description": "Production incident management, triage workflows, and automated incident resolution",
+      "version": "1.3.1",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/incident-response",
+      "category": "operations",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "error-diagnostics",
+      "description": "Error tracing, root cause analysis, and smart debugging for production systems",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/error-diagnostics",
+      "category": "operations",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "distributed-debugging",
+      "description": "Distributed system tracing and debugging across microservices",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/distributed-debugging",
+      "category": "operations",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "observability-monitoring",
+      "description": "Metrics collection, logging infrastructure, distributed tracing, SLO implementation, and monitoring dashboards",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/observability-monitoring",
+      "category": "operations",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "deployment-strategies",
+      "description": "Deployment patterns, rollback automation, and infrastructure templates",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/deployment-strategies",
+      "category": "infrastructure",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "deployment-validation",
+      "description": "Pre-deployment checks, configuration validation, and deployment readiness assessment",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/deployment-validation",
+      "category": "infrastructure",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "kubernetes-operations",
+      "description": "Kubernetes manifest generation, networking configuration, security policies, observability setup, GitOps workflows, and auto-scaling",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/kubernetes-operations",
+      "category": "infrastructure",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "cloud-infrastructure",
+      "description": "Cloud architecture design for AWS/Azure/GCP/OCI, Kubernetes cluster configuration, Terraform infrastructure-as-code, hybrid cloud networking, and multi-cloud cost optimization",
+      "version": "1.3.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/cloud-infrastructure",
+      "category": "infrastructure",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "cicd-automation",
+      "description": "CI/CD pipeline configuration, GitHub Actions/GitLab CI workflow setup, and automated deployment pipeline orchestration",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/cicd-automation",
+      "category": "infrastructure",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "application-performance",
+      "source": "./plugins/application-performance",
+      "description": "Application profiling, performance optimization, and observability for frontend and backend systems",
+      "version": "1.3.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "performance"
+    },
+    {
+      "name": "database-cloud-optimization",
+      "source": "./plugins/database-cloud-optimization",
+      "description": "Database query optimization, cloud cost optimization, and scalability improvements",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "performance"
+    },
+    {
+      "name": "comprehensive-review",
+      "source": "./plugins/comprehensive-review",
+      "description": "Multi-perspective code analysis covering architecture, security, and best practices",
+      "version": "1.3.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "quality"
+    },
+    {
+      "name": "performance-testing-review",
+      "source": "./plugins/performance-testing-review",
+      "description": "Performance analysis, test coverage review, and AI-powered code quality assessment",
+      "version": "1.2.1",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "quality"
+    },
+    {
+      "name": "framework-migration",
+      "source": "./plugins/framework-migration",
+      "description": "Framework updates, migration planning, and architectural transformation workflows",
+      "version": "1.3.1",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "modernization"
+    },
+    {
+      "name": "codebase-cleanup",
+      "source": "./plugins/codebase-cleanup",
+      "description": "Technical debt reduction, dependency updates, and code refactoring automation",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "modernization"
+    },
+    {
+      "name": "database-design",
+      "source": "./plugins/database-design",
+      "description": "Database architecture, schema design, and SQL optimization for production systems",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "database"
+    },
+    {
+      "name": "database-migrations",
+      "source": "./plugins/database-migrations",
+      "description": "Database migration automation, observability, and cross-database migration strategies",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "database"
+    },
+    {
+      "name": "security-scanning",
+      "description": "SAST analysis, dependency vulnerability scanning, OWASP Top 10 compliance, container security scanning, and automated security hardening",
+      "version": "1.3.1",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/security-scanning",
+      "category": "security",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "security-compliance",
+      "description": "SOC2, HIPAA, and GDPR compliance validation, secrets scanning, compliance checklists, and regulatory documentation",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/security-compliance",
+      "category": "security",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "backend-api-security",
+      "description": "API security hardening, authentication implementation, authorization patterns, rate limiting, and input validation",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/backend-api-security",
+      "category": "security",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "frontend-mobile-security",
+      "description": "XSS prevention, CSRF protection, content security policies, mobile app security, and secure storage patterns",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/frontend-mobile-security",
+      "category": "security",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "data-validation-suite",
+      "description": "Schema validation, data quality monitoring, streaming validation pipelines, and input validation for backend APIs",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/data-validation-suite",
+      "category": "data",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "api-scaffolding",
+      "source": "./plugins/api-scaffolding",
+      "description": "REST and GraphQL API scaffolding, framework selection, backend architecture, and API generation",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "api"
+    },
+    {
+      "name": "api-testing-observability",
+      "source": "./plugins/api-testing-observability",
+      "description": "API testing automation, request mocking, OpenAPI documentation generation, observability setup, and monitoring",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "api"
+    },
+    {
+      "name": "seo-content-creation",
+      "source": "./plugins/seo-content-creation",
+      "description": "SEO content writing, planning, and quality auditing with E-E-A-T optimization",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "marketing"
+    },
+    {
+      "name": "seo-technical-optimization",
+      "source": "./plugins/seo-technical-optimization",
+      "description": "Technical SEO optimization including meta tags, keywords, structure, and featured snippets",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "marketing"
+    },
+    {
+      "name": "seo-analysis-monitoring",
+      "source": "./plugins/seo-analysis-monitoring",
+      "description": "Content freshness analysis, cannibalization detection, and authority building for SEO",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "marketing"
+    },
+    {
+      "name": "documentation-generation",
+      "source": "./plugins/documentation-generation",
+      "description": "OpenAPI specification generation, Mermaid diagram creation, tutorial writing, API reference documentation",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "documentation"
+    },
+    {
+      "name": "c4-architecture",
+      "source": "./plugins/c4-architecture",
+      "description": "Comprehensive C4 architecture documentation workflow with bottom-up code analysis, component synthesis, container mapping, and context diagram generation",
       "version": "1.0.0",
       "author": {
-        "name": "Guillaume Isabelle",
-        "url": "https://github.com/jgwill"
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
       },
-      "homepage": "https://github.com/jgwill/mia-agents",
-      "repository": "https://github.com/jgwill/mia-agents",
+      "homepage": "https://github.com/wshobson/agents",
       "license": "MIT",
-      "keywords": [
-        "business",
-        "hr",
-        "legal",
-        "sales",
-        "customer-support"
-      ],
+      "category": "documentation"
+    },
+    {
+      "name": "multi-platform-apps",
+      "source": "./plugins/multi-platform-apps",
+      "description": "Cross-platform application development coordinating web, iOS, Android, and desktop implementations",
+      "version": "1.3.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "development"
+    },
+    {
+      "name": "business-analytics",
+      "source": "./plugins/business-analytics",
+      "description": "Business metrics analysis, KPI tracking, financial reporting, and data-driven decision making",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "business"
+    },
+    {
+      "name": "startup-business-analyst",
+      "description": "Comprehensive startup business analysis with market sizing (TAM/SAM/SOM), financial modeling, team planning, and strategic research for early-stage companies",
+      "version": "1.0.5",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/startup-business-analyst",
       "category": "business",
-      "strict": false,
-      "commands": [],
-      "agents": [
-        "./agents/business-analyst.md",
-        "./agents/hr-pro.md",
-        "./agents/legal-advisor.md",
-        "./agents/risk-manager.md",
-        "./agents/sales-automator.md",
-        "./agents/content-marketer.md",
-        "./agents/customer-support.md",
-        "./agents/payment-integration.md"
-      ]
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
     },
     {
-      "name": "specialized-tools",
-      "source": "./",
-      "description": "Specialized agents for documentation, diagramming, tutorials, and legacy modernization",
+      "name": "hr-legal-compliance",
+      "source": "./plugins/hr-legal-compliance",
+      "description": "HR policy documentation, legal compliance templates (GDPR/SOC2/HIPAA), employment contracts, and regulatory documentation",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "business"
+    },
+    {
+      "name": "customer-sales-automation",
+      "source": "./plugins/customer-sales-automation",
+      "description": "Customer support workflow automation, sales pipeline management, email campaigns, and CRM integration",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "business"
+    },
+    {
+      "name": "content-marketing",
+      "source": "./plugins/content-marketing",
+      "description": "Content marketing strategy, web research, and information synthesis for marketing operations",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "marketing"
+    },
+    {
+      "name": "blockchain-web3",
+      "source": "./plugins/blockchain-web3",
+      "description": "Smart contract development with Solidity, DeFi protocol implementation, NFT platforms, and Web3 application architecture",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "blockchain"
+    },
+    {
+      "name": "quantitative-trading",
+      "source": "./plugins/quantitative-trading",
+      "description": "Quantitative analysis, algorithmic trading strategies, financial modeling, portfolio risk management, and backtesting",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "finance"
+    },
+    {
+      "name": "payment-processing",
+      "source": "./plugins/payment-processing",
+      "description": "Payment gateway integration with Stripe, PayPal, checkout flow implementation, subscription billing, and PCI compliance",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "payments"
+    },
+    {
+      "name": "game-development",
+      "source": "./plugins/game-development",
+      "description": "Unity game development with C# scripting, Minecraft server plugin development with Bukkit/Spigot APIs",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "gaming"
+    },
+    {
+      "name": "accessibility-compliance",
+      "source": "./plugins/accessibility-compliance",
+      "description": "WCAG accessibility auditing, compliance validation, UI testing for screen readers, keyboard navigation, and inclusive design",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "accessibility"
+    },
+    {
+      "name": "python-development",
+      "source": "./plugins/python-development",
+      "description": "Modern Python development with Python 3.12+, Django, FastAPI, async patterns, and production best practices",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "languages"
+    },
+    {
+      "name": "javascript-typescript",
+      "source": "./plugins/javascript-typescript",
+      "description": "JavaScript and TypeScript development with ES6+, Node.js, React, and modern web frameworks",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "languages"
+    },
+    {
+      "name": "systems-programming",
+      "source": "./plugins/systems-programming",
+      "description": "Systems programming with Rust, Go, C, and C++ for performance-critical and low-level development",
+      "version": "1.2.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "languages"
+    },
+    {
+      "name": "jvm-languages",
+      "source": "./plugins/jvm-languages",
+      "description": "JVM language development including Java, Scala, and C# with enterprise patterns and frameworks",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "languages"
+    },
+    {
+      "name": "web-scripting",
+      "source": "./plugins/web-scripting",
+      "description": "Web scripting with PHP and Ruby for web applications, CMS development, and backend services",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "languages"
+    },
+    {
+      "name": "functional-programming",
+      "source": "./plugins/functional-programming",
+      "description": "Functional programming with Elixir, OTP patterns, Phoenix framework, and distributed systems",
+      "version": "1.2.0",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "languages"
+    },
+    {
+      "name": "julia-development",
+      "source": "./plugins/julia-development",
+      "description": "Modern Julia development with Julia 1.10+, package management, scientific computing, high-performance numerical code, and production best practices",
       "version": "1.0.0",
       "author": {
-        "name": "Guillaume Isabelle",
-        "url": "https://github.com/jgwill"
+        "name": "Community Contribution",
+        "url": "https://github.com/exAClior"
       },
-      "homepage": "https://github.com/jgwill/mia-agents",
-      "repository": "https://github.com/jgwill/mia-agents",
+      "homepage": "https://github.com/wshobson/agents",
       "license": "MIT",
-      "keywords": [
-        "documentation",
-        "mermaid",
-        "tutorials",
-        "legacy-modernization",
-        "prompt-engineering"
-      ],
-      "category": "utilities",
-      "strict": false,
-      "commands": [],
-      "agents": [
-        "./agents/api-documenter.md",
-        "./agents/mermaid-expert.md",
-        "./agents/minecraft-bukkit-pro.md",
-        "./agents/legacy-modernizer.md",
-        "./agents/tutorial-engineer.md",
-        "./agents/prompt-engineer.md",
-        "./agents/reference-builder.md"
-      ]
+      "category": "languages"
+    },
+    {
+      "name": "arm-cortex-microcontrollers",
+      "source": "./plugins/arm-cortex-microcontrollers",
+      "description": "ARM Cortex-M firmware development for Teensy, STM32, nRF52, and SAMD with peripheral drivers and memory safety patterns",
+      "version": "1.2.0",
+      "author": {
+        "name": "Ryan Snodgrass",
+        "url": "https://github.com/rsnodgrass"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "languages"
+    },
+    {
+      "name": "shell-scripting",
+      "source": "./plugins/shell-scripting",
+      "description": "Production-grade Bash scripting with defensive programming, POSIX compliance, and comprehensive testing",
+      "version": "1.2.2",
+      "author": {
+        "name": "Ryan Snodgrass",
+        "url": "https://github.com/rsnodgrass"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "languages"
+    },
+    {
+      "name": "developer-essentials",
+      "source": "./plugins/developer-essentials",
+      "description": "Essential developer skills including Git workflows, SQL optimization, error handling, code review, E2E testing, authentication, debugging, and monorepo management",
+      "version": "1.0.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "development"
+    },
+    {
+      "name": "reverse-engineering",
+      "source": "./plugins/reverse-engineering",
+      "description": "Binary reverse engineering, malware analysis, firmware security, and software protection research for authorized security research, CTF competitions, and defensive security",
+      "version": "1.0.0",
+      "author": {
+        "name": "D\u00e1vid Balatoni",
+        "url": "https://github.com/balcsida"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "security"
+    },
+    {
+      "name": "conductor",
+      "description": "Context-Driven Development plugin that transforms Claude Code into a project management tool with structured workflow: Context \u2192 Spec & Plan \u2192 Implement",
+      "version": "1.2.1",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/conductor",
+      "category": "workflows",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "ui-design",
+      "description": "Comprehensive UI/UX design plugin for mobile (iOS, Android, React Native) and web applications with design systems, accessibility, and modern patterns",
+      "version": "1.0.4",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/ui-design",
+      "category": "development",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "agent-teams",
+      "description": "Orchestrate multi-agent teams for parallel code review, hypothesis-driven debugging, and coordinated feature development using Claude Code's Agent Teams",
+      "version": "1.0.2",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "source": "./plugins/agent-teams",
+      "category": "workflows",
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "name": "dotnet-contribution",
+      "source": "./plugins/dotnet-contribution",
+      "description": "Comprehensive .NET backend development with C#, ASP.NET Core, Entity Framework Core, and Dapper for production-grade applications",
+      "version": "1.0.1",
+      "author": {
+        "name": "Seth Hobson",
+        "email": "seth@major7apps.com"
+      },
+      "homepage": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "category": "languages"
+    },
+    {
+      "name": "meigen-ai-design",
+      "source": "./plugins/meigen-ai-design",
+      "description": "AI image generation with creative workflow orchestration, prompt engineering, and curated inspiration library via MCP server",
+      "version": "1.0.0",
+      "author": {
+        "name": "MeiGen",
+        "url": "https://github.com/jau123"
+      },
+      "homepage": "https://github.com/jau123/MeiGen-AI-Design-MCP",
+      "license": "MIT",
+      "category": "creative"
+    },
+    {
+      "name": "plugin-eval",
+      "source": "./plugins/plugin-eval",
+      "description": "Three-layer quality evaluation framework for Claude Code plugins with Elo ranking",
+      "version": "0.1.0",
+      "author": {
+        "name": "Seth Hobson"
+      },
+      "license": "MIT",
+      "category": "quality"
+    },
+    {
+      "name": "pensyve",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/major7apps/pensyve.git",
+        "path": "integrations/claude-code"
+      },
+      "description": "Universal memory runtime — cross-session cognitive memory for Claude Code with episodic, semantic, and procedural memory",
+      "version": "1.0.4",
+      "author": {
+        "name": "Seth Hobson",
+        "url": "https://github.com/wshobson"
+      },
+      "homepage": "https://github.com/major7apps/pensyve",
+      "license": "Apache-2.0",
+      "category": "ai-ml"
     },
     {
       "name": "persona-synthesis-framework",
@@ -335,31 +1018,6 @@
       ]
     },
     {
-      "name": "educational-scaffolding",
-      "source": "./",
-      "description": "GenAI-enabled self-regulated learning scaffolding for educational support",
-      "version": "1.0.0",
-      "author": {
-        "name": "Guillaume Isabelle",
-        "url": "https://github.com/jgwill"
-      },
-      "homepage": "https://github.com/jgwill/mia-agents",
-      "repository": "https://github.com/jgwill/mia-agents",
-      "license": "MIT",
-      "keywords": [
-        "education",
-        "scaffolding",
-        "self-regulated-learning",
-        "genai"
-      ],
-      "category": "education",
-      "strict": false,
-      "commands": [],
-      "agents": [
-        "./agents/genai-education-scaffolding.md"
-      ]
-    },
-    {
       "name": "reality-narrative-integration",
       "source": "./",
       "description": "Reality-narrative research framework for bridging practical reality and narrative understanding",
@@ -385,6 +1043,31 @@
       ]
     },
     {
+      "name": "educational-scaffolding",
+      "source": "./",
+      "description": "GenAI-enabled self-regulated learning scaffolding for educational support",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guillaume Isabelle",
+        "url": "https://github.com/jgwill"
+      },
+      "homepage": "https://github.com/jgwill/mia-agents",
+      "repository": "https://github.com/jgwill/mia-agents",
+      "license": "MIT",
+      "keywords": [
+        "education",
+        "scaffolding",
+        "self-regulated-learning",
+        "genai"
+      ],
+      "category": "education",
+      "strict": false,
+      "commands": [],
+      "agents": [
+        "./agents/genai-education-scaffolding.md"
+      ]
+    },
+    {
       "name": "system-orchestration",
       "source": "./",
       "description": "System orchestration and cartography agents including Conductor and Clarion",
@@ -406,8 +1089,8 @@
       "strict": false,
       "commands": [],
       "agents": [
-        "./Conductor.md",
-        "./Clarion_The_System_Cartographer_Instructions.md",
+        "./agents/Conductor.md",
+        "./agents/Clarion_The_System_Cartographer_Instructions.md",
         "./agents/ios-screen-observer.md"
       ]
     }

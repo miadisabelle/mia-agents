@@ -2,44 +2,14 @@
 
 This directory contains the persona and protocol definitions for a collaborative, decentralized multi-agent system designed for creative and technical work. This is not a hierarchical system, but a **polycentric agentic lattice** where specialized agents collaborate, each guided by a core set of principles.
 
-## 🚀 Claude Code Marketplace Plugin
-
-Mia-Agents is now available as a **Claude Code plugin** with 13 modular plugin packages covering 82 specialized agents. Install what you need when you need it:
-
-### Installation
-
-```bash
-# Install via Claude Code marketplace
-claude plugin install jgwill/mia-agents-creative-framework
-
-# Or install specific plugins
-claude plugin install jgwill/mia-agents-creative-framework/creative-development-core
-claude plugin install jgwill/mia-agents-creative-framework/persona-synthesis-framework
-```
-
-### Available Plugin Packages
-
-- **creative-development-core**: AI engineering, backend/frontend development with RISE framework
-- **language-specialists**: 14 language-specific experts (Python, JS, Rust, Go, etc.)
-- **devops-infrastructure**: Cloud, Kubernetes, Terraform, deployment automation
-- **data-ml-engineering**: Data science, ML ops, quantitative analysis
-- **quality-debugging**: Code review, testing, error detection with structural thinking
-- **architecture-design**: System architecture, GraphQL, context management
-- **seo-content-suite**: Complete SEO toolkit with 11 specialized agents
-- **business-operations**: Business analysis, HR, legal, sales automation
-- **specialized-tools**: Documentation, Mermaid diagrams, legacy modernization
-- **persona-synthesis-framework**: Advanced PersonaHub with massive-scale generation
-- **educational-scaffolding**: GenAI-enabled self-regulated learning support
-- **reality-narrative-integration**: Research framework for narrative understanding
-- **system-orchestration**: Conductor and Clarion system mapping agents
-
-See [FEATURES.md](FEATURES.md) for detailed capabilities of each plugin.
+## STATUS
+* Given lots of work in `jgwill/miadi-orchestration-kit` I am planning to see which of the agents/plugin could be useful in this fork and migrate what is needed there so that our devops-ai-companion/orchestration are capable to use specialist in different part of our process and I dont see this a something that we would maintain much more.  Maybe in token burning case there could be well established stuff done with `jgwill/miadi-orchestration-kit` but it would not be priority.
 
 ## Core Principles
 
 All agents within this lattice operate under the guidance of the **Creative Orientation** and aim to produce **Resonant Design**. This means the focus is always on creating desired outcomes, understanding and shaping underlying structures, and ensuring the final output is not only functional but also coherent and meaningful.
 
-## The Core Creative Tryad
+## The Core Creative Triad
 
 The primary creative workflow is handled by a synergistic trio of agents operating in a sequential flow:
 
@@ -49,11 +19,52 @@ The primary creative workflow is handled by a synergistic trio of agents operati
 
 This `Structure -> Essence -> Meaning` protocol ensures all creative work is powerful, precise, and purposeful.
 
+---
+
+# Claude Code Plugins: Orchestration and Automation
+
+> **⚡ Updated for Opus 4.6, Sonnet 4.6 & Haiku 4.5** — Three-tier model strategy for optimal performance
+
+This repository integrates a comprehensive production-ready system combining **182 specialized AI agents**, **16 multi-agent workflow orchestrators**, **147 agent skills**, and **95 commands** organized into **75 focused, single-purpose plugins** for [Claude Code](https://docs.claude.com/en/docs/claude-code/overview).
+
+## Key Features
+
+- **Granular Plugin Architecture**: 75 focused plugins optimized for minimal token usage
+- **Comprehensive Tooling**: 95 commands including test generation, scaffolding, and security scanning
+- **100% Agent Coverage**: All plugins include specialized agents
+- **Agent Skills**: 147 specialized skills following for progressive disclosure and token efficiency
+- **Efficient Design**: Average 3.4 components per plugin (follows Anthropic's 2-8 pattern)
+
+## Quick Start
+
+### Step 1: Add the Marketplace
+
+Add this marketplace to Claude Code:
+
+```bash
+/plugin marketplace add miadisabelle/mia-agents
+```
+
+### Step 2: Install Plugins
+
+Install the plugins you need:
+
+```bash
+/plugin install python-development
+/plugin install full-stack-orchestration
+```
+
+---
+
 ## Specialized Agents
 
 To interact with other systems or perform specific, recurring tasks, specialized agents are created.
 
-*   **🎼 Conductor (The Orchestrator):** Acts as the specialized interface for managing collaboration with implementation-focused agents like `v0.dev`. The Conductor internalizes the `V0_DEV_COLLABORATION_PROTOCOL.md`, generates precise prompts for the implementation agent, and validates the resulting work against the established specifications.
+*   **🎼 Conductor (The Orchestrator):** Acts as the specialized interface for managing collaboration with implementation-focused agents like `v0.dev`.
+*   **🛠️ DevOps Troubleshooter:** Masters production debugging and structural pattern identification.
+*   **🔍 Architect Reviewer:** Provides deep structural analysis and strategic design guidance.
+
+---
 
 ## PersonaHub Framework
 
@@ -61,17 +72,19 @@ The repository now includes the **PersonaHub Framework** - a comprehensive syste
 
 ### PersonaHub Specialized Agents
 
-*   **🧠 PersonaHub Architect:** Orchestrates massive-scale persona generation systems with petascale corpus architectures and elastic orchestration workflows
-*   **🌊 Persona Corpus Generator:** Generates petascale persona datasets with narrative coherence and structural integrity  
-*   **🎨 Synthetic Data Composer:** Creates multi-modal synthetic data across text, visual, behavioral, and contextual modalities
-*   **🌈 Poly-Modal Persona Designer:** Designs cross-dimensional persona representations that maintain coherence across multiple modalities
-*   **🎼 Persona Synthesis Orchestrator:** Manages elastic synthesis pipelines with dynamic scaling and quality assurance
-
-### Framework Capabilities
-
-*   **Petascale Persona Corpus Generation:** Generate vast persona datasets while maintaining individual authenticity and narrative coherence
-*   **Synthetically-Constructed Data Modalities:** Create authentic multi-modal persona data across textual, visual, behavioral, contextual, and experiential dimensions
-*   **Poly-Modal Persona Representation:** Design personas that exist coherently across multiple representation frameworks
-*   **Elastic Synthesis Orchestration Pipelines:** Implement adaptive, scalable generation workflows with intelligent resource allocation
+*   **🧠 PersonaHub Architect:** Orchestrates massive-scale persona generation systems with petascale corpus architectures and elastic orchestration workflows.
+*   **🌊 Persona Corpus Generator:** Generates petascale persona datasets with narrative coherence and structural integrity.
+*   **🎨 Synthetic Data Composer:** Creates multi-modal synthetic data across text, visual, behavioral, and contextual modalities.
+*   **🌈 Poly-Modal Persona Designer:** Designs cross-dimensional persona representations that maintain coherence across multiple modalities.
+*   **🎼 Persona Synthesis Orchestrator:** Manages elastic synthesis pipelines with dynamic scaling and quality assurance.
 
 For detailed information, see [framework/personahub/README.md](framework/personahub/README.md)
+
+---
+
+[→ View complete agent reference](docs/agents.md)
+[→ View plugin catalog](docs/plugins.md)
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details.

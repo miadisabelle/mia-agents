@@ -20,7 +20,7 @@ body:
       label: Preliminary Checks
       description: Please confirm you have completed these steps
       options:
-        - label: I have read the [Code of Conduct](.github/CODE_OF_CONDUCT.md)
+        - label: I have read the [Code of Conduct](https://github.com/wshobson/agents/blob/main/.github/CODE_OF_CONDUCT.md)
           required: true
         - label: >-
             I have searched existing issues to ensure this is not a duplicate
