@@ -2,6 +2,9 @@
 
 This directory contains the persona and protocol definitions for a collaborative, decentralized multi-agent system designed for creative and technical work. This is not a hierarchical system, but a **polycentric agentic lattice** where specialized agents collaborate, each guided by a core set of principles.
 
+## STATUS
+* Given lots of work in `jgwill/miadi-orchestration-kit` I am planning to see which of the agents/plugin could be useful in this fork and migrate what is needed there so that our devops-ai-companion/orchestration are capable to use specialist in different part of our process and I dont see this a something that we would maintain much more.  Maybe in token burning case there could be well established stuff done with `jgwill/miadi-orchestration-kit` but it would not be priority.
+
 ## Core Principles
 
 All agents within this lattice operate under the guidance of the **Creative Orientation** and aim to produce **Resonant Design**. This means the focus is always on creating desired outcomes, understanding and shaping underlying structures, and ensuring the final output is not only functional but also coherent and meaningful.
